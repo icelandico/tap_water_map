@@ -77,7 +77,8 @@ function zoomToFeature(e) {
 }
 
 L.tileLayer('http://{s}.tiles.mapbox.com/v3/texastribune.map-3g2hqvcf/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+  noWrap: true
 }).addTo(mymap);
 
 geojsonLayer.addTo(mymap)
