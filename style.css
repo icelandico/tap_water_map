@@ -29,3 +29,7 @@ body {
     margin: 0;
     padding: 3px 0;
 }
+
+.map__info-country-name {
+    font-weight: 700;
+}
