@@ -1,0 +1,934 @@
+[
+  {
+    "Country": "Afghanistan",
+    "Water Quality": 23
+  },
+  {
+    "Country": "Albania",
+    "Water Quality": 31
+  },
+  {
+    "Country": "Algeria",
+    "Water Quality": 46
+  },
+  {
+    "Country": "American Samoa",
+    "Water Quality": 0
+  },
+  {
+    "Country": "Andorra",
+    "Water Quality": 69
+  },
+  {
+    "Country": "Angola",
+    "Water Quality": 18
+  },
+  {
+    "Country": "Anguilla",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Antigua and Barbuda",
+    "Water Quality": 0
+  },
+  {
+    "Country": "Argentina",
+    "Water Quality": 45
+  },
+  {
+    "Country": "Armenia",
+    "Water Quality": 66
+  },
+  {
+    "Country": "Aruba",
+    "Water Quality": 67
+  },
+  {
+    "Country": "Australia",
+    "Water Quality": 71
+  },
+  {
+    "Country": "Austria",
+    "Water Quality": 88
+  },
+  {
+    "Country": "Azerbaijan",
+    "Water Quality": 30
+  },
+  {
+    "Country": "Bahamas",
+    "Water Quality": 41
+  },
+  {
+    "Country": "Bahrain",
+    "Water Quality": 49
+  },
+  {
+    "Country": "Bangladesh",
+    "Water Quality": 26
+  },
+  {
+    "Country": "Barbados",
+    "Water Quality": 64
+  },
+  {
+    "Country": "Belarus",
+    "Water Quality": 59
+  },
+  {
+    "Country": "Belgium",
+    "Water Quality": 59
+  },
+  {
+    "Country": "Belize",
+    "Water Quality": 38
+  },
+  {
+    "Country": "Benin",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Bermuda",
+    "Water Quality": 85
+  },
+  {
+    "Country": "Bhutan",
+    "Water Quality": 46
+  },
+  {
+    "Country": "Bolivia",
+    "Water Quality": 35
+  },
+  {
+    "Country": "Bosnia and Herzegovina",
+    "Water Quality": 53
+  },
+  {
+    "Country": "Botswana",
+    "Water Quality": 60
+  },
+  {
+    "Country": "Brazil",
+    "Water Quality": 39
+  },
+  {
+    "Country": "British Virgin Islands",
+    "Water Quality": 0
+  },
+  {
+    "Country": "Brunei Darussalam",
+    "Water Quality": 53
+  },
+  {
+    "Country": "Bulgaria",
+    "Water Quality": 59
+  },
+  {
+    "Country": "Burkina Faso",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Burundi",
+    "Water Quality": 0
+  },
+  {
+    "Country": "Cabo Verde",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Cambodia",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Cameroon",
+    "Water Quality": 19
+  },
+  {
+    "Country": "Canada",
+    "Water Quality": 67
+  },
+  {
+    "Country": "Caribbean Netherlands",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Cayman Islands",
+    "Water Quality": 60
+  },
+  {
+    "Country": "Central African Republic",
+    "Water Quality": 0
+  },
+  {
+    "Country": "Chad",
+    "Water Quality": 67
+  },
+  {
+    "Country": "Channel Islands",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Chile",
+    "Water Quality": 59
+  },
+  {
+    "Country": "China",
+    "Water Quality": 32
+  },
+  {
+    "Country": "Hong Kong",
+    "Water Quality": 47
+  },
+  {
+    "Country": "Macau",
+    "Water Quality": 34
+  },
+  {
+    "Country": "Colombia",
+    "Water Quality": 56
+  },
+  {
+    "Country": "Comoros",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Congo",
+    "Water Quality": 8
+  },
+  {
+    "Country": "Cook Islands",
+    "Water Quality": 75
+  },
+  {
+    "Country": "Costa Rica",
+    "Water Quality": 54
+  },
+  {
+    "Country": "C��te d���Ivoire",
+    "Water Quality": 21
+  },
+  {
+    "Country": "Croatia",
+    "Water Quality": 75
+  },
+  {
+    "Country": "Cuba",
+    "Water Quality": 38
+  },
+  {
+    "Country": "Cura��ao",
+    "Water Quality": 59
+  },
+  {
+    "Country": "Cyprus",
+    "Water Quality": 57
+  },
+  {
+    "Country": "Czech Republic",
+    "Water Quality": 70
+  },
+  {
+    "Country": "North Korea",
+    "Water Quality": 33
+  },
+  {
+    "Country": "Democratic Republic of the Congo",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Denmark",
+    "Water Quality": 83
+  },
+  {
+    "Country": "Djibouti",
+    "Water Quality": 55
+  },
+  {
+    "Country": "Dominica",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Dominican Republic",
+    "Water Quality": 29
+  },
+  {
+    "Country": "Ecuador",
+    "Water Quality": 48
+  },
+  {
+    "Country": "Egypt",
+    "Water Quality": 28
+  },
+  {
+    "Country": "El Salvador",
+    "Water Quality": 30
+  },
+  {
+    "Country": "Equatorial Guinea",
+    "Water Quality": 57
+  },
+  {
+    "Country": "Eritrea",
+    "Water Quality": 75
+  },
+  {
+    "Country": "Estonia",
+    "Water Quality": 81
+  },
+  {
+    "Country": "Eswatini",
+    "Water Quality": 53
+  },
+  {
+    "Country": "Ethiopia",
+    "Water Quality": 28
+  },
+  {
+    "Country": "Falkland Islands",
+    "Water Quality": 100
+  },
+  {
+    "Country": "Faroe Islands",
+    "Water Quality": 92
+  },
+  {
+    "Country": "Fiji",
+    "Water Quality": 38
+  },
+  {
+    "Country": "Finland",
+    "Water Quality": 86
+  },
+  {
+    "Country": "France",
+    "Water Quality": 61
+  },
+  {
+    "Country": "French Guiana",
+    "Water Quality": 50
+  },
+  {
+    "Country": "French Polynesia",
+    "Water Quality": 56
+  },
+  {
+    "Country": "Gabon",
+    "Water Quality": 20
+  },
+  {
+    "Country": "Gambia",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Georgia",
+    "Water Quality": 52
+  },
+  {
+    "Country": "Germany",
+    "Water Quality": 78
+  },
+  {
+    "Country": "Ghana",
+    "Water Quality": 13
+  },
+  {
+    "Country": "Gibraltar",
+    "Water Quality": 54
+  },
+  {
+    "Country": "Greece",
+    "Water Quality": 63
+  },
+  {
+    "Country": "Greenland",
+    "Water Quality": 12
+  },
+  {
+    "Country": "Grenada",
+    "Water Quality": 60
+  },
+  {
+    "Country": "Guadeloupe",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Guam",
+    "Water Quality": 53
+  },
+  {
+    "Country": "Guatemala",
+    "Water Quality": 35
+  },
+  {
+    "Country": "Guinea",
+    "Water Quality": 6
+  },
+  {
+    "Country": "Guinea-Bissau",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Guyana",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Haiti",
+    "Water Quality": 35
+  },
+  {
+    "Country": "Holy See",
+    "Water Quality": 0
+  },
+  {
+    "Country": "Honduras",
+    "Water Quality": 28
+  },
+  {
+    "Country": "Hungary",
+    "Water Quality": 70
+  },
+  {
+    "Country": "Iceland",
+    "Water Quality": 91
+  },
+  {
+    "Country": "India",
+    "Water Quality": 28
+  },
+  {
+    "Country": "Indonesia",
+    "Water Quality": 39
+  },
+  {
+    "Country": "Iran",
+    "Water Quality": 49
+  },
+  {
+    "Country": "Iraq",
+    "Water Quality": 31
+  },
+  {
+    "Country": "Ireland",
+    "Water Quality": 64
+  },
+  {
+    "Country": "Isle of Man",
+    "Water Quality": 85
+  },
+  {
+    "Country": "Israel",
+    "Water Quality": 62
+  },
+  {
+    "Country": "Italy",
+    "Water Quality": 58
+  },
+  {
+    "Country": "Jamaica",
+    "Water Quality": 37
+  },
+  {
+    "Country": "Japan",
+    "Water Quality": 62
+  },
+  {
+    "Country": "Jordan",
+    "Water Quality": 35
+  },
+  {
+    "Country": "Kazakhstan",
+    "Water Quality": 45
+  },
+  {
+    "Country": "Kenya",
+    "Water Quality": 19
+  },
+  {
+    "Country": "Kiribati",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Kuwait",
+    "Water Quality": 46
+  },
+  {
+    "Country": "Kyrgyzstan",
+    "Water Quality": 53
+  },
+  {
+    "Country": "Laos",
+    "Water Quality": 27
+  },
+  {
+    "Country": "Latvia",
+    "Water Quality": 70
+  },
+  {
+    "Country": "Lebanon",
+    "Water Quality": 21
+  },
+  {
+    "Country": "Lesotho",
+    "Water Quality": 50
+  },
+  {
+    "Country": "Liberia",
+    "Water Quality": 11
+  },
+  {
+    "Country": "Libya",
+    "Water Quality": 45
+  },
+  {
+    "Country": "Liechtenstein",
+    "Water Quality": 100
+  },
+  {
+    "Country": "Lithuania",
+    "Water Quality": 74
+  },
+  {
+    "Country": "Luxembourg",
+    "Water Quality": 82
+  },
+  {
+    "Country": "Madagascar",
+    "Water Quality": 20
+  },
+  {
+    "Country": "Malawi",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Malaysia",
+    "Water Quality": 37
+  },
+  {
+    "Country": "Maldives",
+    "Water Quality": 19
+  },
+  {
+    "Country": "Mali",
+    "Water Quality": 17
+  },
+  {
+    "Country": "Malta",
+    "Water Quality": 42
+  },
+  {
+    "Country": "Marshall Islands",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Martinique",
+    "Water Quality": 50
+  },
+  {
+    "Country": "Mauritania",
+    "Water Quality": 63
+  },
+  {
+    "Country": "Mauritius",
+    "Water Quality": 44
+  },
+  {
+    "Country": "Mayotte",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Mexico",
+    "Water Quality": 39
+  },
+  {
+    "Country": "Micronesia",
+    "Water Quality": 0
+  },
+  {
+    "Country": "Monaco",
+    "Water Quality": 46
+  },
+  {
+    "Country": "Mongolia",
+    "Water Quality": 28
+  },
+  {
+    "Country": "Montenegro",
+    "Water Quality": 62
+  },
+  {
+    "Country": "Montserrat",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Morocco",
+    "Water Quality": 45
+  },
+  {
+    "Country": "Mozambique",
+    "Water Quality": 33
+  },
+  {
+    "Country": "Myanmar",
+    "Water Quality": 28
+  },
+  {
+    "Country": "Namibia",
+    "Water Quality": 45
+  },
+  {
+    "Country": "Nauru",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Nepal",
+    "Water Quality": 24
+  },
+  {
+    "Country": "Netherlands",
+    "Water Quality": 80
+  },
+  {
+    "Country": "New Caledonia",
+    "Water Quality": 45
+  },
+  {
+    "Country": "New Zealand",
+    "Water Quality": 65
+  },
+  {
+    "Country": "Nicaragua",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Niger",
+    "Water Quality": 0
+  },
+  {
+    "Country": "Nigeria",
+    "Water Quality": 21
+  },
+  {
+    "Country": "Niue",
+    "Water Quality": 100
+  },
+  {
+    "Country": "North Macedonia",
+    "Water Quality": 49
+  },
+  {
+    "Country": "Northern Mariana Islands",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Norway",
+    "Water Quality": 85
+  },
+  {
+    "Country": "Oman",
+    "Water Quality": 62
+  },
+  {
+    "Country": "Pakistan",
+    "Water Quality": 28
+  },
+  {
+    "Country": "Palau",
+    "Water Quality": 100
+  },
+  {
+    "Country": "Panama",
+    "Water Quality": 34
+  },
+  {
+    "Country": "Papua New Guinea",
+    "Water Quality": 28
+  },
+  {
+    "Country": "Paraguay",
+    "Water Quality": 40
+  },
+  {
+    "Country": "Peru",
+    "Water Quality": 20
+  },
+  {
+    "Country": "Philippines",
+    "Water Quality": 26
+  },
+  {
+    "Country": "Poland",
+    "Water Quality": 65
+  },
+  {
+    "Country": "Portugal",
+    "Water Quality": 70
+  },
+  {
+    "Country": "Puerto Rico",
+    "Water Quality": 44
+  },
+  {
+    "Country": "Qatar",
+    "Water Quality": 53
+  },
+  {
+    "Country": "South Korea",
+    "Water Quality": 61
+  },
+  {
+    "Country": "Moldova",
+    "Water Quality": 37
+  },
+  {
+    "Country": "R��union",
+    "Water Quality": 75
+  },
+  {
+    "Country": "Romania",
+    "Water Quality": 54
+  },
+  {
+    "Country": "Russia",
+    "Water Quality": 47
+  },
+  {
+    "Country": "Rwanda",
+    "Water Quality": 47
+  },
+  {
+    "Country": "Saint Helena",
+    "Water Quality": 75
+  },
+  {
+    "Country": "Saint Kitts and Nevis",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Saint Lucia",
+    "Water Quality": 67
+  },
+  {
+    "Country": "Saint Pierre and Miquelon",
+    "Water Quality": 100
+  },
+  {
+    "Country": "Saint Vincent and the Grenadines",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Samoa",
+    "Water Quality": 56
+  },
+  {
+    "Country": "San Marino",
+    "Water Quality": 50
+  },
+  {
+    "Country": "Sao Tome and Principe",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Saudi Arabia",
+    "Water Quality": 52
+  },
+  {
+    "Country": "Senegal",
+    "Water Quality": 20
+  },
+  {
+    "Country": "Serbia",
+    "Water Quality": 49
+  },
+  {
+    "Country": "Seychelles",
+    "Water Quality": 52
+  },
+  {
+    "Country": "Sierra Leone",
+    "Water Quality": 0
+  },
+  {
+    "Country": "Singapore",
+    "Water Quality": 75
+  },
+  {
+    "Country": "Sint Maarten",
+    "Water Quality": 13
+  },
+  {
+    "Country": "Slovakia",
+    "Water Quality": 70
+  },
+  {
+    "Country": "Slovenia",
+    "Water Quality": 84
+  },
+  {
+    "Country": "Solomon Islands",
+    "Water Quality": 15
+  },
+  {
+    "Country": "Somalia",
+    "Water Quality": 41
+  },
+  {
+    "Country": "South Africa",
+    "Water Quality": 41
+  },
+  {
+    "Country": "South Sudan",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Spain",
+    "Water Quality": 65
+  },
+  {
+    "Country": "Sri Lanka",
+    "Water Quality": 41
+  },
+  {
+    "Country": "Sudan",
+    "Water Quality": 31
+  },
+  {
+    "Country": "Suriname",
+    "Water Quality": 45
+  },
+  {
+    "Country": "Sweden",
+    "Water Quality": 85
+  },
+  {
+    "Country": "Switzerland",
+    "Water Quality": 84
+  },
+  {
+    "Country": "Syria",
+    "Water Quality": 48
+  },
+  {
+    "Country": "Tajikistan",
+    "Water Quality": 39
+  },
+  {
+    "Country": "Thailand",
+    "Water Quality": 30
+  },
+  {
+    "Country": "Timor-Leste",
+    "Water Quality": 25
+  },
+  {
+    "Country": "Togo",
+    "Water Quality": 19
+  },
+  {
+    "Country": "Tokelau",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Tonga",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Trinidad and Tobago",
+    "Water Quality": 33
+  },
+  {
+    "Country": "Tunisia",
+    "Water Quality": 46
+  },
+  {
+    "Country": "Turkey",
+    "Water Quality": 47
+  },
+  {
+    "Country": "Turkmenistan",
+    "Water Quality": 68
+  },
+  {
+    "Country": "Turks and Caicos Islands",
+    "Water Quality": 50
+  },
+  {
+    "Country": "Tuvalu",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Uganda",
+    "Water Quality": 21
+  },
+  {
+    "Country": "Ukraine",
+    "Water Quality": 39
+  },
+  {
+    "Country": "United Arab Emirates",
+    "Water Quality": 60
+  },
+  {
+    "Country": "United Kingdom",
+    "Water Quality": 70
+  },
+  {
+    "Country": "United Republic of Tanzania",
+    "Water Quality": 30
+  },
+  {
+    "Country": "United States Virgin Islands",
+    "Water Quality": 92
+  },
+  {
+    "Country": "United States of America",
+    "Water Quality": 57
+  },
+  {
+    "Country": "Uruguay",
+    "Water Quality": 54
+  },
+  {
+    "Country": "Uzbekistan",
+    "Water Quality": 57
+  },
+  {
+    "Country": "Vanuatu",
+    "Water Quality": 30
+  },
+  {
+    "Country": "Venezuela",
+    "Water Quality": 28
+  },
+  {
+    "Country": "Vietnam",
+    "Water Quality": 24
+  },
+  {
+    "Country": "Wallis and Futuna Islands",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "West Bank and Gaza Strip",
+    "Water Quality": 46
+  },
+  {
+    "Country": "Western Sahara",
+    "Water Quality": "-"
+  },
+  {
+    "Country": "Yemen",
+    "Water Quality": 30
+  },
+  {
+    "Country": "Zambia",
+    "Water Quality": 6
+  },
+  {
+    "Country": "Zimbabwe",
+    "Water Quality": 19
+  },
+  {
+    "Country": "Taiwan",
+    "Water Quality": 41
+  }
+]
