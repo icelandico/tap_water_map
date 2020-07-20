@@ -1,4 +1,19 @@
 const mymap = L.map('map-container').setView([51.505, -0.09], 3);
+const countryInfo = L.control();
+
+countryInfo.onAdd = function (map) {
+  this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+  this.update();
+  return this._div;
+};
+
+countryInfo.update = function (props) {
+  this._div.innerHTML = '<h4>Tap Water Quality</h4>' +  (props ?
+      '<b>' + props.name_long + '</b><br />' + props.waterQuality
+      : 'Hover over a state');
+};
+
+countryInfo.addTo(mymap);
 
 const countriesStyle = feature => {
   return {
@@ -30,6 +45,7 @@ const highlightFeature = e => {
     dashArray: '',
     fillOpacity: 0.7
   });
+  countryInfo.update(layer.feature.properties);
 
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
@@ -38,6 +54,7 @@ const highlightFeature = e => {
 
 const resetHighlight = e => {
   geojsonLayer.resetStyle(e.target);
+  countryInfo.update();
 };
 
 const onEachFeature = (feature, layer) => {
