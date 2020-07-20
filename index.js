@@ -8,9 +8,10 @@ countryInfo.onAdd = function (map) {
 };
 
 countryInfo.update = function (props) {
-  this._div.innerHTML = '<h4>Tap Water Quality</h4>' +  (props ?
-      '<b>' + props.name_long + '</b><br />' + props.waterQuality
-      : 'Hover over a state');
+  const waterValue = props && props.waterQuality || "No Data"
+  this._div.innerHTML = '<h1>Tap Water Quality</h1>' +  (props ?
+      '<b>' + props.name_long + '</b><br />' + waterValue
+      : 'Hover over a country');
 };
 
 countryInfo.addTo(mymap);
@@ -28,7 +29,7 @@ const countriesStyle = feature => {
 
 const chooseColor = value => {
   if (!value) return "#ecf0f1";
-  if (value > 80) return "#00ae2c";
+  if (value > 80) return "#269a4e";
   if (value > 60) return "#2ecc71";
   if (value > 40) return "#f1c40f";
   if (value > 20) return "#e67e22";
