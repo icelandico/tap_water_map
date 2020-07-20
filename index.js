@@ -7,17 +7,17 @@ const countriesStyle = feature => {
     fillColor: chooseColor(feature.properties.waterQuality),
     color: '#1F2232',
     weight: 0.2,
-    fillOpacity: 0.5
+    fillOpacity: 0.7
   }
-}
+};
 
-function chooseColor(value) {
-  if (value > 80) return "#045a8d"
-  if (value > 60) return "#2b8cbe"
-  if (value > 40) return "#74a9cf"
-  if (value > 20) return "#bdc9e1"
-  if (value > 0) return "#f1eef6"
-}
+const chooseColor = value => {
+  if (value > 80) return "#1a9641";
+  if (value > 60) return "#a6d96a";
+  if (value > 40) return "#ffffc0";
+  if (value > 20) return "#fdae61";
+  if (value > 0) return "#d7191c";
+};
 
 const geojsonLayer = new L.GeoJSON.AJAX("countries.geojson", {style: countriesStyle});
 
