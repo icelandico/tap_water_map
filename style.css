@@ -17,10 +17,15 @@ body {
     box-shadow: 3px 3px 0 rgba(31,34,50,1);
     border-radius: 2px;
     min-width: 130px;
-    min-height: 55px;
+    min-height: 65px;
 }
 .info h1 {
     font-size: 18px;
     margin: 0 0 5px;
     color: #1F2232;
+}
+
+.info p {
+    margin: 0;
+    padding: 3px 0;
 }
