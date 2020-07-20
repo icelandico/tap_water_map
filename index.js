@@ -12,11 +12,13 @@ const countriesStyle = feature => {
 };
 
 const chooseColor = value => {
-  if (value > 80) return "#1a9641";
-  if (value > 60) return "#a6d96a";
-  if (value > 40) return "#ffffc0";
-  if (value > 20) return "#fdae61";
-  if (value > 0) return "#d7191c";
+  if (!value) return "#ecf0f1";
+  if (value > 80) return "#00ae2c";
+  if (value > 60) return "#2ecc71";
+  if (value > 40) return "#f1c40f";
+  if (value > 20) return "#e67e22";
+  if (value > 0) return "#e74c3c";
+  if (value == 0) return "#34495e";
 };
 
 const highlightFeature = e => {
