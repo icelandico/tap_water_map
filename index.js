@@ -1,16 +1,16 @@
-const mymap = L.map('map-container').setView([51.505, -0.09], 3);
+const mymap = L.map('map-container').setView([51.505, -0.09], 2);
 const countryInfo = L.control();
 
 countryInfo.onAdd = function (map) {
-  this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+  this.div = L.DomUtil.create('div', 'info')
   this.update();
-  return this._div;
+  return this.div;
 };
 
 countryInfo.update = function (props) {
   const waterValue = props && props.waterQuality || "No Data"
-  this._div.innerHTML = '<h1>Tap Water Quality</h1>' +  (props ?
-      '<p class="map__info-country-name">' + props.name_long + '</p>' +
+  this.div.innerHTML = '<h1>Tap Water Quality</h1>' +  (props ?
+      '<p class="map__info-country-name">' + props.name + '</p>' +
       '<p>' + waterValue + '</p>'
       : 'Hover over a country');
 };
@@ -52,10 +52,10 @@ const highlightFeature = e => {
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
   }
-}
+};
 
 const resetHighlight = e => {
-  geojsonLayer.resetStyle(e.target);
+  geojsonLayerCountries.resetStyle(e.target);
   countryInfo.update();
 };
 
@@ -65,21 +65,62 @@ const onEachFeature = (feature, layer) => {
     mouseout: resetHighlight,
     click: zoomToFeature
   });
-}
+};
 
-const geojsonLayer = new L.GeoJSON.AJAX("countries.geojson",{
-    style: countriesStyle,
-    onEachFeature: onEachFeature
-  });
+const usFilter = feature => {
+  if (feature.properties.abbrev !== "U.S.A.") return true
+};
 
-function zoomToFeature(e) {
+const geojsonLayerCountries = new L.GeoJSON.AJAX("countries.geojson", {
+  style: countriesStyle,
+  onEachFeature: onEachFeature,
+});
+
+const geojsonLayerCountriesNoUs = new L.GeoJSON.AJAX("countries.geojson", {
+  style: countriesStyle,
+  onEachFeature: onEachFeature,
+  filter: usFilter
+});
+
+const geojsonLayerStates = new L.GeoJSON.AJAX("us_states.geojson", {
+  style: countriesStyle,
+  onEachFeature: onEachFeature
+});
+
+const zoomToFeature = e => {
+  // const clickedFeature = e.target;
+  // if (clickedFeature.feature.properties.abbrev === "U.S.A.")
+  // clickedFeature.setStyle({
+  //   fillOpacity: 0
+  // });
   mymap.fitBounds(e.target.getBounds());
-}
+};
+
+const addStatesLayer = () => {
+  geojsonLayerCountries.remove();
+  geojsonLayerCountriesNoUs.addTo(mymap);
+  geojsonLayerStates.addTo(mymap)
+};
+
+const removeUsStates = () => {
+  geojsonLayerCountriesNoUs.remove();
+  geojsonLayerCountries.addTo(mymap);
+  geojsonLayerStates.remove();
+};
 
 L.tileLayer('http://{s}.tiles.mapbox.com/v3/texastribune.map-3g2hqvcf/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
   noWrap: true
 }).addTo(mymap);
 
-geojsonLayer.addTo(mymap)
+mymap.on('zoomend',function(e){
+  const currentZoom = mymap.getZoom();
+  if (currentZoom >= 4) {
+    addStatesLayer();
+  } else {
+    removeUsStates();
+  }
+});
+
+geojsonLayerCountries.addTo(mymap);
 
