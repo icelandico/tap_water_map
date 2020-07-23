@@ -1,0 +1,757 @@
+State;City;Water Quality;states_cities
+South Dakota;Aberdeen;85;South Dakota_Aberdeen
+Texas;Abilene;;Texas_Abilene
+Massachusetts;Acton;;Massachusetts_Acton
+Ohio;Akron;15;Ohio_Akron
+California;Alameda;;California_Alameda
+New Mexico;Alamogordo;;New Mexico_Alamogordo
+New York;Albany;73;New York_Albany
+Oregon;Albany;;Oregon_Albany
+New Mexico;Albuquerque;59;New Mexico_Albuquerque
+Louisiana;Alexandria;50;Louisiana_Alexandria
+Virginia;Alexandria;57;Virginia_Alexandria
+California;Aliso Viejo;;California_Aliso Viejo
+Texas;Allen;;Texas_Allen
+Pennsylvania;Allentown;25;Pennsylvania_Allentown
+Georgia;Alpharetta;;Georgia_Alpharetta
+Illinois;Alton;;Illinois_Alton
+Texas;Amarillo;50;Texas_Amarillo
+Iowa;Ames;50;Iowa_Ames
+Massachusetts;Amherst;;Massachusetts_Amherst
+California;Anaheim;66;California_Anaheim
+Alaska;Anchorage;81;Alaska_Anchorage
+California;Anderson;;California_Anderson
+South Carolina;Anderson;;South Carolina_Anderson
+Massachusetts;Andover;;Massachusetts_Andover
+Iowa;Ankeny;;Iowa_Ankeny
+Michigan;Ann Arbor;52;Michigan_Ann Arbor
+Maryland;Annapolis;53;Maryland_Annapolis
+California;Antioch;;California_Antioch
+Florida;Apopka;;Florida_Apopka
+California;Apple Valley;;California_Apple Valley
+Wisconsin;Appleton;75;Wisconsin_Appleton
+Texas;Arlington;85;Texas_Arlington
+Virginia;Arlington;81;Virginia_Arlington
+Virginia;Ashburn;75;Virginia_Ashburn
+North Carolina;Asheville;56;North Carolina_Asheville
+New York;Astoria;38;New York_Astoria
+Oregon;Astoria;;Oregon_Astoria
+California;Atascadero;0;California_Atascadero
+Georgia;Athens;75;Georgia_Athens
+Ohio;Athens;100;Ohio_Athens
+Georgia;Atlanta;52;Georgia_Atlanta
+Alabama;Auburn;;Alabama_Auburn
+Georgia;Augusta;67;Georgia_Augusta
+Maine;Augusta;;Maine_Augusta
+Colorado;Aurora;67;Colorado_Aurora
+Illinois;Aurora;69;Illinois_Aurora
+Texas;Austin;57;Texas_Austin
+Arizona;Avondale;;Arizona_Avondale
+California;Bakersfield;33;California_Bakersfield
+Maryland;Baltimore;39;Maryland_Baltimore
+Maine;Bangor;;Maine_Bangor
+Louisiana;Baton Rouge;64;Louisiana_Baton Rouge
+Michigan;Battle Creek;;Michigan_Battle Creek
+Texas;Baytown;;Texas_Baytown
+South Carolina;Beaufort;;South Carolina_Beaufort
+Texas;Beaumont;;Texas_Beaumont
+Oregon;Beaverton;93;Oregon_Beaverton
+West Virginia;Beckley;;West Virginia_Beckley
+Illinois;Belleville;80;Illinois_Belleville
+Washington;Bellevue;78;Washington_Bellevue
+Washington;Bellingham;70;Washington_Bellingham
+California;Belmont;75;California_Belmont
+Wisconsin;Beloit;;Wisconsin_Beloit
+Oregon;Bend;;Oregon_Bend
+Arkansas;Bentonville;;Arkansas_Bentonville
+New Jersey;Bergen County;;New Jersey_Bergen County
+California;Berkeley;64;California_Berkeley
+Maryland;Bethesda;;Maryland_Bethesda
+Pennsylvania;Bethlehem;;Pennsylvania_Bethlehem
+California;Beverly Hills;;California_Beverly Hills
+Montana;Billings;56;Montana_Billings
+Mississippi;Biloxi;;Mississippi_Biloxi
+New York;Binghamton;33;New York_Binghamton
+Alabama;Birmingham;75;Alabama_Birmingham
+North Dakota;Bismarck;79;North Dakota_Bismarck
+Virginia;Blacksburg;;Virginia_Blacksburg
+Michigan;Bloomfield Hills;;Michigan_Bloomfield Hills
+Illinois;Bloomington;67;Illinois_Bloomington
+Indiana;Bloomington;45;Indiana_Bloomington
+Florida;Boca Raton;68;Florida_Boca Raton
+Idaho;Boise;71;Idaho_Boise
+North Carolina;Boone;33;North Carolina_Boone
+Massachusetts;Boston;67;Massachusetts_Boston
+Colorado;Boulder;50;Colorado_Boulder
+Kentucky;Bowling Green;0;Kentucky_Bowling Green
+Florida;Boynton Beach;;Florida_Boynton Beach
+Montana;Bozeman;97;Montana_Bozeman
+Florida;Bradenton;57;Florida_Bradenton
+Minnesota;Brainerd;50;Minnesota_Brainerd
+California;Brea;;California_Brea
+Washington;Bremerton;50;Washington_Bremerton
+California;Brentwood;;California_Brentwood
+Tennessee;Brentwood;;Tennessee_Brentwood
+Connecticut;Bridgeport;;Connecticut_Bridgeport
+New Jersey;Bridgewater;;New Jersey_Bridgewater
+New York;Bronx;;New York_Bronx
+New York;Brookhaven;;New York_Brookhaven
+New York;Brooklyn;68;New York_Brooklyn
+Texas;Brownsville;20;Texas_Brownsville
+Georgia;Brunswick;67;Georgia_Brunswick
+New York;Buffalo;63;New York_Buffalo
+Arizona;Bullhead City;;Arizona_Bullhead City
+California;Burbank;;California_Burbank
+Idaho;Burley;;Idaho_Burley
+Iowa;Burlington;63;Iowa_Burlington
+Vermont;Burlington;75;Vermont_Burlington
+Montana;Butte;44;Montana_Butte
+California;Camarillo;;California_Camarillo
+Massachusetts;Cambridge;68;Massachusetts_Cambridge
+California;Canoga Park;;California_Canoga Park
+Ohio;Canton;75;Ohio_Canton
+Missouri;Cape Girardeau;;Missouri_Cape Girardeau
+Illinois;Carbondale;;Illinois_Carbondale
+California;Carlsbad;58;California_Carlsbad
+New Mexico;Carlsbad;;New Mexico_Carlsbad
+Nevada;Carson City;50;Nevada_Carson City
+Georgia;Cartersville;;Georgia_Cartersville
+North Carolina;Cary;;North Carolina_Cary
+Wyoming;Casper;50;Wyoming_Casper
+Utah;Cedar City;;Utah_Cedar City
+Iowa;Cedar Rapids;100;Iowa_Cedar Rapids
+Virginia;Centreville;;Virginia_Centreville
+Illinois;Champaign;67;Illinois_Champaign
+Arizona;Chandler;55;Arizona_Chandler
+North Carolina;Chapel Hill;58;North Carolina_Chapel Hill
+South Carolina;Charleston;45;South Carolina_Charleston
+West Virginia;Charleston;50;West Virginia_Charleston
+North Carolina;Charlotte;67;North Carolina_Charlotte
+Virginia;Charlottesville;42;Virginia_Charlottesville
+Tennessee;Chattanooga;38;Tennessee_Chattanooga
+New Jersey;Cherry Hill;;New Jersey_Cherry Hill
+Virginia;Chesapeake;;Virginia_Chesapeake
+Wyoming;Cheyenne;100;Wyoming_Cheyenne
+Illinois;Chicago;50;Illinois_Chicago
+California;Chico;50;California_Chico
+California;Chula Vista;;California_Chula Vista
+Ohio;Cincinnati;56;Ohio_Cincinnati
+California;Citrus Heights;;California_Citrus Heights
+Tennessee;Clarksville;100;Tennessee_Clarksville
+Florida;Clearwater;75;Florida_Clearwater
+Ohio;Cleveland;48;Ohio_Cleveland
+New Jersey;Clifton;;New Jersey_Clifton
+Michigan;Clinton Township;;Michigan_Clinton Township
+New Mexico;Clovis;;New Mexico_Clovis
+Wyoming;Cody;;Wyoming_Cody
+Idaho;Coeur d'Alene;50;Idaho_Coeur d'Alene
+Maryland;College Park;;Maryland_College Park
+Texas;College Station;61;Texas_College Station
+Colorado;Colorado Springs;63;Colorado_Colorado Springs
+California;Colton;;California_Colton
+Maryland;Columbia;;Maryland_Columbia
+Missouri;Columbia;75;Missouri_Columbia
+South Carolina;Columbia;48;South Carolina_Columbia
+Georgia;Columbus;44;Georgia_Columbus
+Indiana;Columbus;;Indiana_Columbus
+Ohio;Columbus;74;Ohio_Columbus
+California;Concord;88;California_Concord
+New Hampshire;Concord;85;New Hampshire_Concord
+Texas;Conroe;;Texas_Conroe
+Tennessee;Cookeville;50;Tennessee_Cookeville
+Oregon;Coos Bay;;Oregon_Coos Bay
+Florida;Coral Springs;;Florida_Coral Springs
+California;Corona;;California_Corona
+Texas;Corpus Christi;33;Texas_Corpus Christi
+Oregon;Corvallis;;Oregon_Corvallis
+California;Costa Mesa;;California_Costa Mesa
+Arizona;Cottonwood;;Arizona_Cottonwood
+Florida;Crestview;;Florida_Crestview
+Illinois;Crystal Lake;67;Illinois_Crystal Lake
+Maryland;Cumberland;;Maryland_Cumberland
+Georgia;Cumming;;Georgia_Cumming
+California;Cupertino;;California_Cupertino
+Texas;Dallas;56;Texas_Dallas
+Connecticut;Danbury;;Connecticut_Danbury
+California;Danville;;California_Danville
+Virginia;Danville;;Virginia_Danville
+Iowa;Davenport;38;Iowa_Davenport
+California;Davis;75;California_Davis
+Ohio;Dayton;70;Ohio_Dayton
+Florida;Daytona Beach;54;Florida_Daytona Beach
+Illinois;Decatur;63;Illinois_Decatur
+Florida;Deerfield Beach;71;Florida_Deerfield Beach
+Illinois;DeKalb;;Illinois_DeKalb
+Texas;Del Rio;;Texas_Del Rio
+Florida;DeLand;67;Florida_DeLand
+Florida;Delray Beach;;Florida_Delray Beach
+Texas;Denton;50;Texas_Denton
+Colorado;Denver;65;Colorado_Denver
+Iowa;Des Moines;67;Iowa_Des Moines
+Illinois;Des Plaines;50;Illinois_Des Plaines
+Michigan;Detroit;55;Michigan_Detroit
+Kansas;Dodge City;;Kansas_Dodge City
+Alabama;Dothan;25;Alabama_Dothan
+Delaware;Dover;50;Delaware_Dover
+New Hampshire;Dover;;New Hampshire_Dover
+California;Downey;;California_Downey
+Pennsylvania;Downingtown;;Pennsylvania_Downingtown
+Pennsylvania;Doylestown;;Pennsylvania_Doylestown
+Ohio;Dublin;61;Ohio_Dublin
+Iowa;Dubuque;;Iowa_Dubuque
+Georgia;Duluth;;Georgia_Duluth
+Minnesota;Duluth;75;Minnesota_Duluth
+Colorado;Durango;44;Colorado_Durango
+North Carolina;Durham;63;North Carolina_Durham
+Alaska;Eagle River;;Alaska_Eagle River
+Michigan;East Lansing;;Michigan_East Lansing
+Rhode Island;East Providence;;Rhode Island_East Providence
+Wisconsin;Eau Claire;100;Wisconsin_Eau Claire
+Minnesota;Eden Prairie;;Minnesota_Eden Prairie
+New Jersey;Edison;75;New Jersey_Edison
+Oklahoma;Edmond;;Oklahoma_Edmond
+Illinois;Edwardsville;;Illinois_Edwardsville
+California;El Cajon;;California_El Cajon
+California;El Centro;33;California_El Centro
+Arkansas;El Dorado;;Arkansas_El Dorado
+Texas;El Paso;53;Texas_El Paso
+Kentucky;Elizabethtown;;Kentucky_Elizabethtown
+Indiana;Elkhart;50;Indiana_Elkhart
+Nevada;Elko;;Nevada_Elko
+New York;Elmira;;New York_Elmira
+Pennsylvania;Erie;0;Pennsylvania_Erie
+Oregon;Eugene;53;Oregon_Eugene
+California;Eureka;100;California_Eureka
+Illinois;Evanston;;Illinois_Evanston
+Indiana;Evansville;50;Indiana_Evansville
+Washington;Everett;63;Washington_Everett
+Alaska;Fairbanks;90;Alaska_Fairbanks
+Virginia;Fairfax;75;Virginia_Fairfax
+California;Fairfield;63;California_Fairfield
+Connecticut;Fairfield;38;Connecticut_Fairfield
+Massachusetts;Fall River;;Massachusetts_Fall River
+North Dakota;Fargo;100;North Dakota_Fargo
+New Mexico;Farmington;50;New Mexico_Farmington
+Michigan;Farmington Hills;;Michigan_Farmington Hills
+Arkansas;Fayetteville;75;Arkansas_Fayetteville
+North Carolina;Fayetteville;35;North Carolina_Fayetteville
+Arizona;Flagstaff;81;Arizona_Flagstaff
+Michigan;Flint;16;Michigan_Flint
+Alabama;Florence;63;Alabama_Florence
+Wisconsin;Fond du Lac;;Wisconsin_Fond du Lac
+California;Fontana;83;California_Fontana
+Colorado;Fort Collins;69;Colorado_Fort Collins
+Florida;Fort Lauderdale;60;Florida_Fort Lauderdale
+Florida;Fort Myers;15;Florida_Fort Myers
+Arkansas;Fort Smith;75;Arkansas_Fort Smith
+Florida;Fort Walton Beach;;Florida_Fort Walton Beach
+Indiana;Fort Wayne;57;Indiana_Fort Wayne
+Texas;Fort Worth;49;Texas_Fort Worth
+California;Foster City;;California_Foster City
+Tennessee;Franklin;;Tennessee_Franklin
+Maryland;Frederick;67;Maryland_Frederick
+Virginia;Fredericksburg;;Virginia_Fredericksburg
+California;Fremont;81;California_Fremont
+California;Fresno;20;California_Fresno
+Texas;Frisco;100;Texas_Frisco
+California;Fullerton;;California_Fullerton
+Alabama;Gadsden;25;Alabama_Gadsden
+Florida;Gainesville;61;Florida_Gainesville
+Georgia;Gainesville;50;Georgia_Gainesville
+Maryland;Gaithersburg;;Maryland_Gaithersburg
+Illinois;Galesburg;;Illinois_Galesburg
+Texas;Galveston;50;Texas_Galveston
+California;Garden Grove;;California_Garden Grove
+Texas;Garland;;Texas_Garland
+North Carolina;Gastonia;;North Carolina_Gastonia
+Maryland;Germantown;100;Maryland_Germantown
+Washington;Gig Harbor;;Washington_Gig Harbor
+Arizona;Gilbert;;Arizona_Gilbert
+Wyoming;Gillette;50;Wyoming_Gillette
+Arizona;Glendale;;Arizona_Glendale
+California;Glendale;44;California_Glendale
+Texas;Granbury;;Texas_Granbury
+North Dakota;Grand Forks;;North Dakota_Grand Forks
+Nebraska;Grand Island;;Nebraska_Grand Island
+Colorado;Grand Junction;82;Colorado_Grand Junction
+Michigan;Grand Rapids;67;Michigan_Grand Rapids
+Oregon;Grants Pass;;Oregon_Grants Pass
+Texas;Grapevine;;Texas_Grapevine
+California;Grass Valley;;California_Grass Valley
+Montana;Great Falls;;Montana_Great Falls
+Colorado;Greeley;;Colorado_Greeley
+Wisconsin;Green Bay;63;Wisconsin_Green Bay
+North Carolina;Greensboro;72;North Carolina_Greensboro
+Pennsylvania;Greensburg;;Pennsylvania_Greensburg
+North Carolina;Greenville;75;North Carolina_Greenville
+South Carolina;Greenville;91;South Carolina_Greenville
+Texas;Greenville;;Texas_Greenville
+Oregon;Gresham;;Oregon_Gresham
+Mississippi;Gulfport;50;Mississippi_Gulfport
+Maryland;Hagerstown;50;Maryland_Hagerstown
+Ohio;Hamilton;47;Ohio_Hamilton
+New Hampshire;Hanover;75;New Hampshire_Hanover
+Texas;Harlingen;;Texas_Harlingen
+Pennsylvania;Harrisburg;60;Pennsylvania_Harrisburg
+Arkansas;Harrison;;Arkansas_Harrison
+Connecticut;Hartford;50;Connecticut_Hartford
+Mississippi;Hattiesburg;50;Mississippi_Hattiesburg
+Massachusetts;Haverhill;;Massachusetts_Haverhill
+California;Hayward;75;California_Hayward
+Montana;Helena;50;Montana_Helena
+New York;Hempstead;;New York_Hempstead
+Nevada;Henderson;54;Nevada_Henderson
+Virginia;Herndon;;Virginia_Herndon
+North Carolina;Hickory;;North Carolina_Hickory
+North Carolina;High Point;;North Carolina_High Point
+Colorado;Highlands Ranch;;Colorado_Highlands Ranch
+Oregon;Hillsboro;;Oregon_Hillsboro
+Hawaii;Hilo;45;Hawaii_Hilo
+South Carolina;Hilton Head Island;75;South Carolina_Hilton Head Island
+New Mexico;Hobbs;;New Mexico_Hobbs
+New Jersey;Hoboken;38;New Jersey_Hoboken
+Michigan;Holland;;Michigan_Holland
+Florida;Hollywood;;Florida_Hollywood
+Hawaii;Honolulu;59;Hawaii_Honolulu
+Arkansas;Hot Springs;;Arkansas_Hot Springs
+Louisiana;Houma;;Louisiana_Houma
+Texas;Houston;44;Texas_Houston
+West Virginia;Huntington;75;West Virginia_Huntington
+California;Huntington Beach;42;California_Huntington Beach
+Alabama;Huntsville;73;Alabama_Huntsville
+Massachusetts;Hyannis;;Massachusetts_Hyannis
+Idaho;Idaho Falls;83;Idaho_Idaho Falls
+Missouri;Independence;;Missouri_Independence
+Indiana;Indianapolis;49;Indiana_Indianapolis
+California;Indio;;California_Indio
+Iowa;Iowa City;75;Iowa_Iowa City
+California;Irvine;65;California_Irvine
+Texas;Irving;;Texas_Irving
+New York;Ithaca;59;New York_Ithaca
+Mississippi;Jackson;81;Mississippi_Jackson
+Tennessee;Jackson;88;Tennessee_Jackson
+Wyoming;Jackson;;Wyoming_Jackson
+Florida;Jacksonville;36;Florida_Jacksonville
+North Carolina;Jacksonville;;North Carolina_Jacksonville
+New Jersey;Jersey City;58;New Jersey_Jersey City
+Tennessee;Johnson City;88;Tennessee_Johnson City
+Pennsylvania;Johnstown;50;Pennsylvania_Johnstown
+Arkansas;Jonesboro;;Arkansas_Jonesboro
+Missouri;Joplin;81;Missouri_Joplin
+Alaska;Juneau;75;Alaska_Juneau
+Florida;Jupiter;;Florida_Jupiter
+Hawaii;Kahului;;Hawaii_Kahului
+Hawaii;Kailua;;Hawaii_Kailua
+Michigan;Kalamazoo;50;Michigan_Kalamazoo
+Montana;Kalispell;100;Montana_Kalispell
+Kansas;Kansas City;69;Kansas_Kansas City
+Missouri;Kansas City;53;Missouri_Kansas City
+Texas;Katy;50;Texas_Katy
+New Hampshire;Keene;;New Hampshire_Keene
+Washington;Kennewick;75;Washington_Kennewick
+Wisconsin;Kenosha;;Wisconsin_Kenosha
+Washington;Kent;;Washington_Kent
+Alaska;Ketchikan;;Alaska_Ketchikan
+Florida;Key West;;Florida_Key West
+Texas;Killeen;;Texas_Killeen
+Arizona;Kingman;;Arizona_Kingman
+Tennessee;Kingsport;0;Tennessee_Kingsport
+New York;Kingston;81;New York_Kingston
+Missouri;Kirksville;;Missouri_Kirksville
+Florida;Kissimmee;31;Florida_Kissimmee
+Oregon;Klamath Falls;38;Oregon_Klamath Falls
+Tennessee;Knoxville;36;Tennessee_Knoxville
+Indiana;Kokomo;75;Indiana_Kokomo
+Wisconsin;La Crosse;50;Wisconsin_La Crosse
+Indiana;Lafayette;44;Indiana_Lafayette
+Louisiana;Lafayette;100;Louisiana_Lafayette
+Louisiana;Lake Charles;40;Louisiana_Lake Charles
+California;Lake Elsinore;;California_Lake Elsinore
+California;Lake Forest;;California_Lake Forest
+Arizona;Lake Havasu City;;Arizona_Lake Havasu City
+Florida;Lake Worth;;Florida_Lake Worth
+Florida;Lakeland;50;Florida_Lakeland
+California;Lancaster;;California_Lancaster
+Pennsylvania;Lancaster;55;Pennsylvania_Lancaster
+Michigan;Lansing;63;Michigan_Lansing
+Wyoming;Laramie;100;Wyoming_Laramie
+Texas;Laredo;;Texas_Laredo
+New Mexico;Las Cruces;67;New Mexico_Las Cruces
+Nevada;Las Vegas;52;Nevada_Las Vegas
+Maryland;Laurel;;Maryland_Laurel
+Kansas;Lawrence;;Kansas_Lawrence
+Georgia;Lawrenceville;;Georgia_Lawrenceville
+Oklahoma;Lawton;50;Oklahoma_Lawton
+Texas;Leander;;Texas_Leander
+Utah;Lehi;;Utah_Lehi
+Pennsylvania;Levittown;;Pennsylvania_Levittown
+Kentucky;Lexington;63;Kentucky_Lexington
+Maryland;Lexington Park;;Maryland_Lexington Park
+Nebraska;Lincoln;66;Nebraska_Lincoln
+Arkansas;Little Rock;77;Arkansas_Little Rock
+California;Livermore;50;California_Livermore
+Michigan;Livonia;;Michigan_Livonia
+Utah;Logan;100;Utah_Logan
+California;Long Beach;70;California_Long Beach
+New Jersey;Long Branch;;New Jersey_Long Branch
+New York;Long Island;75;New York_Long Island
+Colorado;Longmont;;Colorado_Longmont
+Texas;Longview;25;Texas_Longview
+Washington;Longview;;Washington_Longview
+California;Los Angeles;40;California_Los Angeles
+California;Los Gatos;;California_Los Gatos
+Kentucky;Louisville;58;Kentucky_Louisville
+Colorado;Loveland;56;Colorado_Loveland
+Massachusetts;Lowell;;Massachusetts_Lowell
+Texas;Lubbock;66;Texas_Lubbock
+Virginia;Lynchburg;100;Virginia_Lynchburg
+Georgia;Macon;50;Georgia_Macon
+California;Madera;;California_Madera
+Wisconsin;Madison;57;Wisconsin_Madison
+Massachusetts;Malden;;Massachusetts_Malden
+Virginia;Manassas;;Virginia_Manassas
+New Hampshire;Manchester;62;New Hampshire_Manchester
+Kansas;Manhattan;67;Kansas_Manhattan
+Minnesota;Mankato;;Minnesota_Mankato
+Ohio;Mansfield;;Ohio_Mansfield
+Georgia;Marietta;90;Georgia_Marietta
+California;Marina;50;California_Marina
+Michigan;Marquette;;Michigan_Marquette
+California;Martinez;;California_Martinez
+West Virginia;Martinsburg;;West Virginia_Martinsburg
+Hawaii;Maui;100;Hawaii_Maui
+Texas;McAllen;80;Texas_McAllen
+Texas;McKinney;92;Texas_McKinney
+Pennsylvania;Mechanicsburg;;Pennsylvania_Mechanicsburg
+Oregon;Medford;75;Oregon_Medford
+Florida;Melbourne;71;Florida_Melbourne
+Tennessee;Memphis;51;Tennessee_Memphis
+California;Merced;;California_Merced
+Arizona;Mesa;58;Arizona_Mesa
+Texas;Mesquite;;Texas_Mesquite
+Florida;Miami;52;Florida_Miami
+Michigan;Midland;63;Michigan_Midland
+Texas;Midland;;Texas_Midland
+Virginia;Midlothian;;Virginia_Midlothian
+Wisconsin;Milwaukee;55;Wisconsin_Milwaukee
+Minnesota;Minneapolis;65;Minnesota_Minneapolis
+California;Mission Viejo;;California_Mission Viejo
+Montana;Missoula;82;Montana_Missoula
+Utah;Moab;;Utah_Moab
+Missouri;Moberly;;Missouri_Moberly
+Alabama;Mobile;48;Alabama_Mobile
+California;Modesto;57;California_Modesto
+Illinois;Moline;;Illinois_Moline
+Louisiana;Monroe;;Louisiana_Monroe
+New Jersey;Montclair;;New Jersey_Montclair
+California;Monterey;60;California_Monterey
+Alabama;Montgomery;44;Alabama_Montgomery
+North Carolina;Mooresville;;North Carolina_Mooresville
+West Virginia;Morgantown;25;West Virginia_Morgantown
+New Jersey;Morristown;;New Jersey_Morristown
+Tennessee;Morristown;;Tennessee_Morristown
+Michigan;Mount Pleasant;;Michigan_Mount Pleasant
+California;Mountain View;65;California_Mountain View
+Indiana;Muncie;;Indiana_Muncie
+Tennessee;Murfreesboro;;Tennessee_Murfreesboro
+California;Murrieta;75;California_Murrieta
+Michigan;Muskegon;;Michigan_Muskegon
+South Carolina;Myrtle Beach;50;South Carolina_Myrtle Beach
+California;Napa;63;California_Napa
+Illinois;Naperville;88;Illinois_Naperville
+Florida;Naples;42;Florida_Naples
+New Hampshire;Nashua;;New Hampshire_Nashua
+Tennessee;Nashville;56;Tennessee_Nashville
+Massachusetts;Natick;;Massachusetts_Natick
+Massachusetts;New Bedford;;Massachusetts_New Bedford
+North Carolina;New Bern;;North Carolina_New Bern
+Texas;New Braunfels;58;Texas_New Braunfels
+New York;New City;;New York_New City
+Connecticut;New Haven;68;Connecticut_New Haven
+Louisiana;New Orleans;30;Louisiana_New Orleans
+Florida;New Port Richey;;Florida_New Port Richey
+New York;New York;53;New York_New York
+Delaware;Newark;;Delaware_Newark
+New Jersey;Newark;40;New Jersey_Newark
+Georgia;Newnan;;Georgia_Newnan
+Rhode Island;Newport;50;Rhode Island_Newport
+California;Newport Beach;75;California_Newport Beach
+Virginia;Newport News;38;Virginia_Newport News
+Massachusetts;Newton;;Massachusetts_Newton
+New York;Niagara Falls;;New York_Niagara Falls
+Michigan;Niles;;Michigan_Niles
+Virginia;Norfolk;;Virginia_Norfolk
+Illinois;Normal;;Illinois_Normal
+Oklahoma;Norman;;Oklahoma_Norman
+New Jersey;North Brunswick;;New Jersey_North Brunswick
+Nebraska;North Platte;;Nebraska_North Platte
+Massachusetts;Northampton;71;Massachusetts_Northampton
+California;Norwalk;;California_Norwalk
+Connecticut;Norwalk;88;Connecticut_Norwalk
+Missouri;O'Fallon;;Missouri_O'Fallon
+California;Oakland;64;California_Oakland
+Florida;Ocala;68;Florida_Ocala
+California;Oceanside;;California_Oceanside
+Texas;Odessa;;Texas_Odessa
+Utah;Ogden;100;Utah_Ogden
+Oklahoma;Oklahoma City;68;Oklahoma_Oklahoma City
+Washington;Olympia;81;Washington_Olympia
+Nebraska;Omaha;71;Nebraska_Omaha
+California;Ontario;;California_Ontario
+Utah;Orem;67;Utah_Orem
+Florida;Orlando;51;Florida_Orlando
+Wisconsin;Oshkosh;;Wisconsin_Oshkosh
+Kansas;Overland Park;82;Kansas_Overland Park
+Kentucky;Owensboro;33;Kentucky_Owensboro
+Michigan;Owosso;;Michigan_Owosso
+California;Oxnard;100;California_Oxnard
+Kentucky;Paducah;38;Kentucky_Paducah
+Florida;Palm Coast;45;Florida_Palm Coast
+California;Palm Springs;13;California_Palm Springs
+California;Palmdale;50;California_Palmdale
+California;Palo Alto;50;California_Palo Alto
+Florida;Panama City;34;Florida_Panama City
+West Virginia;Parkersburg;;West Virginia_Parkersburg
+New Jersey;Parsippany-Troy Hills;100;New Jersey_Parsippany-Troy Hills
+California;Pasadena;75;California_Pasadena
+California;Paso Robles;;California_Paso Robles
+New Jersey;Passaic;;New Jersey_Passaic
+New Jersey;Paterson;;New Jersey_Paterson
+Arizona;Payson;;Arizona_Payson
+Florida;Pensacola;41;Florida_Pensacola
+Arizona;Peoria;81;Arizona_Peoria
+Illinois;Peoria;70;Illinois_Peoria
+Pennsylvania;Philadelphia;46;Pennsylvania_Philadelphia
+Arizona;Phoenix;51;Arizona_Phoenix
+North Carolina;Pinehurst;;North Carolina_Pinehurst
+Pennsylvania;Pittsburgh;42;Pennsylvania_Pittsburgh
+Massachusetts;Pittsfield;0;Massachusetts_Pittsfield
+Texas;Plano;71;Texas_Plano
+New York;Plattsburgh;;New York_Plattsburgh
+California;Pleasant Hill;;California_Pleasant Hill
+California;Pleasanton;100;California_Pleasanton
+Michigan;Plymouth;81;Michigan_Plymouth
+Idaho;Pocatello;0;Idaho_Pocatello
+California;Pomona;;California_Pomona
+Michigan;Port Huron;;Michigan_Port Huron
+Florida;Port St Lucie;42;Florida_Port St Lucie
+Maine;Portland;57;Maine_Portland
+Oregon;Portland;62;Oregon_Portland
+New Hampshire;Portsmouth;63;New Hampshire_Portsmouth
+New York;Poughkeepsie;88;New York_Poughkeepsie
+Washington;Poulsbo;;Washington_Poulsbo
+Arizona;Prescott;75;Arizona_Prescott
+New Jersey;Princeton;67;New Jersey_Princeton
+Rhode Island;Providence;45;Rhode Island_Providence
+Colorado;Pueblo;50;Colorado_Pueblo
+Washington;Pullman;;Washington_Pullman
+Washington;Puyallup;;Washington_Puyallup
+New York;Queens;40;New York_Queens
+Illinois;Quincy;;Illinois_Quincy
+North Carolina;Raleigh;71;North Carolina_Raleigh
+California;Rancho Cucamonga;83;California_Rancho Cucamonga
+South Dakota;Rapid City;60;South Dakota_Rapid City
+Pennsylvania;Reading;77;Pennsylvania_Reading
+New Jersey;Red Bank;;New Jersey_Red Bank
+California;Redding;60;California_Redding
+California;Redlands;;California_Redlands
+Washington;Redmond;70;Washington_Redmond
+California;Redondo Beach;;California_Redondo Beach
+California;Redwood City;;California_Redwood City
+Delaware;Rehoboth Beach;;Delaware_Rehoboth Beach
+Nevada;Reno;72;Nevada_Reno
+Washington;Renton;83;Washington_Renton
+Virginia;Reston;81;Virginia_Reston
+Washington;Richland;;Washington_Richland
+Kentucky;Richmond;53;Kentucky_Richmond
+Virginia;Richmond;73;Virginia_Richmond
+New Jersey;Ridgewood;;New Jersey_Ridgewood
+California;Riverside;52;California_Riverside
+Virginia;Roanoke;64;Virginia_Roanoke
+Michigan;Rochester;;Michigan_Rochester
+Minnesota;Rochester;50;Minnesota_Rochester
+New York;Rochester;52;New York_Rochester
+South Carolina;Rock Hill;;South Carolina_Rock Hill
+Wyoming;Rock Springs;;Wyoming_Rock Springs
+Illinois;Rockford;40;Illinois_Rockford
+California;Rocklin;;California_Rocklin
+Maryland;Rockville;;Maryland_Rockville
+Texas;Rockwall;;Texas_Rockwall
+North Carolina;Rocky Mount;;North Carolina_Rocky Mount
+Arkansas;Rogers;;Arkansas_Rogers
+Oregon;Roseburg;60;Oregon_Roseburg
+California;Roseville;60;California_Roseville
+California;Sacramento;58;California_Sacramento
+Michigan;Saginaw;31;Michigan_Saginaw
+Missouri;Saint Charles;67;Missouri_Saint Charles
+Minnesota;Saint Cloud;13;Minnesota_Saint Cloud
+Utah;Saint George;50;Utah_Saint George
+Missouri;Saint Joseph;0;Missouri_Saint Joseph
+Missouri;Saint Louis;62;Missouri_Saint Louis
+Minnesota;Saint Paul;66;Minnesota_Saint Paul
+Florida;Saint Petersburg;45;Florida_Saint Petersburg
+Oregon;Salem;82;Oregon_Salem
+Kansas;Salina;;Kansas_Salina
+Maryland;Salisbury;67;Maryland_Salisbury
+Utah;Salt Lake City;54;Utah_Salt Lake City
+Texas;San Angelo;;Texas_San Angelo
+Texas;San Antonio;54;Texas_San Antonio
+California;San Bernardino;;California_San Bernardino
+California;San Diego;46;California_San Diego
+California;San Dimas;;California_San Dimas
+California;San Francisco;60;California_San Francisco
+California;San Jose;60;California_San Jose
+California;San Leandro;;California_San Leandro
+California;San Luis Obispo;63;California_San Luis Obispo
+Texas;San Marcos;;Texas_San Marcos
+California;San Mateo;88;California_San Mateo
+California;San Rafael;;California_San Rafael
+Ohio;Sandusky;;Ohio_Sandusky
+California;Santa Ana;45;California_Santa Ana
+California;Santa Barbara;47;California_Santa Barbara
+California;Santa Clara;65;California_Santa Clara
+California;Santa Clarita;69;California_Santa Clarita
+California;Santa Cruz;66;California_Santa Cruz
+New Mexico;Santa Fe;61;New Mexico_Santa Fe
+California;Santa Maria;;California_Santa Maria
+California;Santa Monica;46;California_Santa Monica
+California;Santa Rosa;68;California_Santa Rosa
+Florida;Sarasota;73;Florida_Sarasota
+New York;Saratoga Springs;;New York_Saratoga Springs
+Georgia;Savannah;48;Georgia_Savannah
+Illinois;Schaumburg;25;Illinois_Schaumburg
+New York;Schenectady;;New York_Schenectady
+Arizona;Scottsdale;73;Arizona_Scottsdale
+Pennsylvania;Scranton;63;Pennsylvania_Scranton
+Washington;SeaTac;;Washington_SeaTac
+Washington;Seattle;63;Washington_Seattle
+Florida;Sebring;;Florida_Sebring
+Missouri;Sedalia;;Missouri_Sedalia
+Alaska;Seward;;Alaska_Seward
+Wisconsin;Sheboygan;100;Wisconsin_Sheboygan
+North Carolina;Shelby;;North Carolina_Shelby
+Wyoming;Sheridan;88;Wyoming_Sheridan
+Texas;Sherman;;Texas_Sherman
+Louisiana;Shreveport;0;Louisiana_Shreveport
+Arizona;Sierra Vista;88;Arizona_Sierra Vista
+Maryland;Silver Spring;69;Maryland_Silver Spring
+California;Simi Valley;75;California_Simi Valley
+Iowa;Sioux City;50;Iowa_Sioux City
+South Dakota;Sioux Falls;79;South Dakota_Sioux Falls
+Alaska;Sitka;;Alaska_Sitka
+New York;Smithtown;;New York_Smithtown
+New Jersey;Somerset;;New Jersey_Somerset
+Massachusetts;Somerville;;Massachusetts_Somerville
+Indiana;South Bend;88;Indiana_South Bend
+Michigan;Southfield;;Michigan_Southfield
+South Carolina;Spartanburg;75;South Carolina_Spartanburg
+Washington;Spokane;79;Washington_Spokane
+Florida;Spring Hill;50;Florida_Spring Hill
+Illinois;Springfield;50;Illinois_Springfield
+Massachusetts;Springfield;92;Massachusetts_Springfield
+Missouri;Springfield;61;Missouri_Springfield
+Oregon;Springfield;;Oregon_Springfield
+Virginia;Springfield;;Virginia_Springfield
+Florida;St. Augustine;;Florida_St. Augustine
+Connecticut;Stamford;55;Connecticut_Stamford
+Mississippi;Starkville;;Mississippi_Starkville
+Pennsylvania;State College;100;Pennsylvania_State College
+New York;Staten Island;;New York_Staten Island
+Georgia;Statesboro;58;Georgia_Statesboro
+Michigan;Sterling Heights;;Michigan_Sterling Heights
+Wisconsin;Stevens Point;;Wisconsin_Stevens Point
+Oklahoma;Stillwater;50;Oklahoma_Stillwater
+California;Stockton;29;California_Stockton
+Texas;Sugar Land;;Texas_Sugar Land
+South Carolina;Sumter;;South Carolina_Sumter
+California;Sunnyvale;38;California_Sunnyvale
+Florida;Sunrise;;Florida_Sunrise
+Arizona;Surprise;;Arizona_Surprise
+New York;Syracuse;59;New York_Syracuse
+Washington;Tacoma;48;Washington_Tacoma
+Florida;Tallahassee;57;Florida_Tallahassee
+Florida;Tampa;53;Florida_Tampa
+New Mexico;Taos;;New Mexico_Taos
+California;Temecula;69;California_Temecula
+Arizona;Tempe;54;Arizona_Tempe
+Texas;Temple;;Texas_Temple
+Indiana;Terre Haute;75;Indiana_Terre Haute
+Texas;Texarkana;25;Texas_Texarkana
+Texas;The Woodlands;;Texas_The Woodlands
+Colorado;Thornton;;Colorado_Thornton
+California;Thousand Oaks;90;California_Thousand Oaks
+Ohio;Toledo;28;Ohio_Toledo
+New Jersey;Toms River;;New Jersey_Toms River
+Kansas;Topeka;44;Kansas_Topeka
+California;Torrance;;California_Torrance
+California;Tracy;;California_Tracy
+Michigan;Traverse City;;Michigan_Traverse City
+New Jersey;Trenton;0;New Jersey_Trenton
+Michigan;Troy;;Michigan_Troy
+Arizona;Tucson;62;Arizona_Tucson
+Oklahoma;Tulsa;61;Oklahoma_Tulsa
+Mississippi;Tupelo;75;Mississippi_Tupelo
+Alabama;Tuscaloosa;60;Alabama_Tuscaloosa
+Idaho;Twin Falls;;Idaho_Twin Falls
+Texas;Tyler;54;Texas_Tyler
+California;Ukiah;50;California_Ukiah
+California;Upland;;California_Upland
+Illinois;Urbana;75;Illinois_Urbana
+New York;Utica;50;New York_Utica
+California;Vacaville;;California_Vacaville
+Georgia;Valdosta;50;Georgia_Valdosta
+California;Vallejo;50;California_Vallejo
+Indiana;Valparaiso;61;Indiana_Valparaiso
+Washington;Vancouver;69;Washington_Vancouver
+Florida;Venice;31;Florida_Venice
+California;Ventura;56;California_Ventura
+Florida;Vero Beach;38;Florida_Vero Beach
+Texas;Victoria;72;Texas_Victoria
+California;Victorville;50;California_Victorville
+Virginia;Virginia Beach;63;Virginia_Virginia Beach
+California;Visalia;;California_Visalia
+California;Vista;;California_Vista
+Texas;Waco;31;Texas_Waco
+Ohio;Wadsworth;;Ohio_Wadsworth
+Maryland;Waldorf;;Maryland_Waldorf
+Washington;Walla Walla;;Washington_Walla Walla
+California;Walnut Creek;;California_Walnut Creek
+Georgia;Warner Robins;63;Georgia_Warner Robins
+Michigan;Warren;;Michigan_Warren
+District of Columbia;Washington;51;District of Columbia_Washington
+Alaska;Wasilla;;Alaska_Wasilla
+Connecticut;Waterbury;;Connecticut_Waterbury
+Iowa;Waterloo;68;Iowa_Waterloo
+New York;Watertown;;New York_Watertown
+South Dakota;Watertown;50;South Dakota_Watertown
+Illinois;Waukegan;;Illinois_Waukegan
+Wisconsin;Waukesha;100;Wisconsin_Waukesha
+Wisconsin;Wausau;;Wisconsin_Wausau
+Missouri;Waynesville;;Missouri_Waynesville
+New York;Webster;;New York_Webster
+Washington;Wenatchee;;Washington_Wenatchee
+Pennsylvania;West Chester;;Pennsylvania_West Chester
+Connecticut;West Hartford;100;Connecticut_West Hartford
+California;West Hollywood;;California_West Hollywood
+Indiana;West Lafayette;;Indiana_West Lafayette
+New Jersey;West New York;;New Jersey_West New York
+Florida;West Palm Beach;33;Florida_West Palm Beach
+Missouri;West Plains;;Missouri_West Plains
+Illinois;Wheaton;;Illinois_Wheaton
+West Virginia;Wheeling;25;West Virginia_Wheeling
+New York;White Plains;;New York_White Plains
+Kansas;Wichita;67;Kansas_Wichita
+Texas;Wichita Falls;56;Texas_Wichita Falls
+Pennsylvania;Wilkes-Barre;;Pennsylvania_Wilkes-Barre
+Virginia;Williamsburg;;Virginia_Williamsburg
+Pennsylvania;Williamsport;;Pennsylvania_Williamsport
+North Dakota;Williston;25;North Dakota_Williston
+Delaware;Wilmington;;Delaware_Wilmington
+North Carolina;Wilmington;55;North Carolina_Wilmington
+Virginia;Winchester;50;Virginia_Winchester
+North Carolina;Winston-Salem;;North Carolina_Winston-Salem
+New Jersey;Woodbridge;;New Jersey_Woodbridge
+Virginia;Woodbridge;;Virginia_Woodbridge
+Georgia;Woodstock;;Georgia_Woodstock
+Ohio;Wooster;;Ohio_Wooster
+Massachusetts;Worcester;25;Massachusetts_Worcester
