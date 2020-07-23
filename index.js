@@ -56,7 +56,7 @@ const customIcon = feature => {
     iconAnchor: [0, 12],
     iconSize: [0, 24],
     labelAnchor: [0, 0],
-    popupAnchor: [7, -18],
+    popupAnchor: [7, -12],
     html: `<span style="${markerHtmlStyles(val)}" />`
   })
   return divIcon
@@ -79,11 +79,6 @@ const highlightFeature = e => {
 };
 
 const updateInfo = data => {
-  countryInfo.update(data);
-}
-
-const updatePopup = data => {
-  console.log("Hover data", data)
   countryInfo.update(data);
 }
 
