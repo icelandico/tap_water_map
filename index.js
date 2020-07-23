@@ -55,9 +55,9 @@ const customIcon = feature => {
   const val = feature.properties.waterQuality;
   const divIcon = L.divIcon({
     className: "my-custom-pin",
-    // iconAnchor: [0, 24],
-    // labelAnchor: [-6, 0],
-    // popupAnchor: [0, -36],
+    iconAnchor: [0, 24],
+    labelAnchor: [0, 0],
+    popupAnchor: [-18, -42],
     html: `<span style="${markerHtmlStyles(val)}" />`
   })
   return divIcon
@@ -92,6 +92,15 @@ const onEachFeature = (feature, layer) => {
   });
 };
 
+const markerPopup = (feature, l) => {
+  const out = [];
+  if (feature.properties) {
+    out.push(`Name: ${feature.properties.name}`);
+    out.push(`Water Quality: ${feature.properties.waterQuality}`);
+    l.bindPopup(out.join("<br />"));
+  }
+};
+
 const usFilter = feature => {
   if (feature.properties.abbrev !== "U.S.A.") return true
 };
@@ -116,6 +125,7 @@ const geojsonLayerCities = new L.GeoJSON.AJAX("us_cities.geojson", {
   pointToLayer: function(geoJsonPoint, latlng) {
     return L.marker(latlng, { icon: customIcon(geoJsonPoint) }); //options object for Marker
   },
+  onEachFeature: markerPopup
 });
 
 const zoomToFeature = e => {
@@ -125,13 +135,14 @@ const zoomToFeature = e => {
 const addStatesLayer = () => {
   geojsonLayerCountries.remove();
   geojsonLayerCountriesNoUs.addTo(mymap);
-  geojsonLayerStates.addTo(mymap)
+  geojsonLayerStates.addTo(mymap);
 };
 
 const removeUsStates = () => {
   geojsonLayerCountriesNoUs.remove();
   geojsonLayerCountries.addTo(mymap);
   geojsonLayerStates.remove();
+  geojsonLayerCities.remove();
 };
 
 L.tileLayer('http://{s}.tiles.mapbox.com/v3/texastribune.map-3g2hqvcf/{z}/{x}/{y}.png', {
@@ -141,6 +152,9 @@ L.tileLayer('http://{s}.tiles.mapbox.com/v3/texastribune.map-3g2hqvcf/{z}/{x}/{y
 
 mymap.on('zoomend',function(e){
   const currentZoom = mymap.getZoom();
+  if (currentZoom >= 5) {
+    geojsonLayerCities.addTo(mymap)
+  }
   if (currentZoom >= 4) {
     addStatesLayer();
   } else {
@@ -149,5 +163,3 @@ mymap.on('zoomend',function(e){
 });
 
 geojsonLayerCountries.addTo(mymap);
-geojsonLayerCities.addTo(mymap)
-
