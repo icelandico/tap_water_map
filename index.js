@@ -114,23 +114,23 @@ const usFilter = feature => {
   if (feature.properties.abbrev !== "U.S.A.") return true
 };
 
-const geojsonLayerCountries = new L.GeoJSON.AJAX("countries.geojson", {
+const geojsonLayerCountries = new L.GeoJSON.AJAX("geojson/countries.geojson", {
   style: countriesStyle,
   onEachFeature: onEachFeature,
 });
 
-const geojsonLayerCountriesNoUs = new L.GeoJSON.AJAX("countries.geojson", {
+const geojsonLayerCountriesNoUs = new L.GeoJSON.AJAX("geojson/countries.geojson", {
   style: countriesStyle,
   onEachFeature: onEachFeature,
   filter: usFilter
 });
 
-const geojsonLayerStates = new L.GeoJSON.AJAX("us_states.geojson", {
+const geojsonLayerStates = new L.GeoJSON.AJAX("geojson/us_states.geojson", {
   style: countriesStyle,
   onEachFeature: onEachFeature,
 });
 
-const geojsonLayerCities = new L.GeoJSON.AJAX("us_cities.geojson", {
+const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
   pointToLayer: function(geoJsonPoint, latlng) {
     return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
   },
