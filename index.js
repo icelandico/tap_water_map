@@ -38,6 +38,31 @@ const chooseColor = value => {
   if (value == 0) return "#34495e";
 };
 
+const markerHtmlStyles = value => `
+  background-color: ${chooseColor(value)};
+  width: 0.75rem;
+  height: 0.75rem;
+  display: block;
+  left: -1.5rem;
+  top: -1.5rem;
+  position: relative;
+  border-radius: 3rem 3rem 0;
+  transform: rotate(45deg);
+  border: 1px solid #FFFFFF
+ `
+
+const customIcon = feature => {
+  const val = feature.properties.waterQuality;
+  const divIcon = L.divIcon({
+    className: "my-custom-pin",
+    // iconAnchor: [0, 24],
+    // labelAnchor: [-6, 0],
+    // popupAnchor: [0, -36],
+    html: `<span style="${markerHtmlStyles(val)}" />`
+  })
+  return divIcon
+}
+
 const highlightFeature = e => {
   const layer = e.target;
 
@@ -87,12 +112,13 @@ const geojsonLayerStates = new L.GeoJSON.AJAX("us_states.geojson", {
   onEachFeature: onEachFeature
 });
 
+const geojsonLayerCities = new L.GeoJSON.AJAX("us_cities.geojson", {
+  pointToLayer: function(geoJsonPoint, latlng) {
+    return L.marker(latlng, { icon: customIcon(geoJsonPoint) }); //options object for Marker
+  },
+});
+
 const zoomToFeature = e => {
-  // const clickedFeature = e.target;
-  // if (clickedFeature.feature.properties.abbrev === "U.S.A.")
-  // clickedFeature.setStyle({
-  //   fillOpacity: 0
-  // });
   mymap.fitBounds(e.target.getBounds());
 };
 
@@ -123,4 +149,5 @@ mymap.on('zoomend',function(e){
 });
 
 geojsonLayerCountries.addTo(mymap);
+geojsonLayerCities.addTo(mymap)
 
