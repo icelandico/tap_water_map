@@ -35,7 +35,7 @@ const chooseColor = value => {
   if (value > 40) return "#f1c40f";
   if (value > 20) return "#e67e22";
   if (value > 0) return "#e74c3c";
-  if (value == 0) return "#34495e";
+  if (value === 0) return "#34495e";
 };
 
 const markerHtmlStyles = value => `
@@ -43,8 +43,6 @@ const markerHtmlStyles = value => `
   width: 0.75rem;
   height: 0.75rem;
   display: block;
-  left: -1.5rem;
-  top: -1.5rem;
   position: relative;
   border-radius: 3rem 3rem 0;
   transform: rotate(45deg);
@@ -55,9 +53,10 @@ const customIcon = feature => {
   const val = feature.properties.waterQuality;
   const divIcon = L.divIcon({
     className: "my-custom-pin",
-    iconAnchor: [0, 24],
+    iconAnchor: [0, 12],
+    iconSize: [0, 24],
     labelAnchor: [0, 0],
-    popupAnchor: [-18, -42],
+    popupAnchor: [7, -18],
     html: `<span style="${markerHtmlStyles(val)}" />`
   })
   return divIcon
@@ -72,12 +71,21 @@ const highlightFeature = e => {
     dashArray: '',
     fillOpacity: 0.7
   });
-  countryInfo.update(layer.feature.properties);
+  updateInfo(layer.feature.properties);
 
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
   }
 };
+
+const updateInfo = data => {
+  countryInfo.update(data);
+}
+
+const updatePopup = data => {
+  console.log("Hover data", data)
+  countryInfo.update(data);
+}
 
 const resetHighlight = e => {
   geojsonLayerCountries.resetStyle(e.target);
@@ -95,10 +103,11 @@ const onEachFeature = (feature, layer) => {
 const markerPopup = (feature, l) => {
   const out = [];
   if (feature.properties) {
-    out.push(`Name: ${feature.properties.name}`);
-    out.push(`Water Quality: ${feature.properties.waterQuality}`);
-    l.bindPopup(out.join("<br />"));
+    out.push(`<p class="city-info">City: ${feature.properties.name}</p>`);
+    out.push(`<p class="city-info">Water Quality: ${feature.properties.waterQuality}</p>`);
+    l.bindPopup(out.join(""));
   }
+
 };
 
 const usFilter = feature => {
@@ -118,12 +127,12 @@ const geojsonLayerCountriesNoUs = new L.GeoJSON.AJAX("countries.geojson", {
 
 const geojsonLayerStates = new L.GeoJSON.AJAX("us_states.geojson", {
   style: countriesStyle,
-  onEachFeature: onEachFeature
+  onEachFeature: onEachFeature,
 });
 
 const geojsonLayerCities = new L.GeoJSON.AJAX("us_cities.geojson", {
   pointToLayer: function(geoJsonPoint, latlng) {
-    return L.marker(latlng, { icon: customIcon(geoJsonPoint) }); //options object for Marker
+    return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
   },
   onEachFeature: markerPopup
 });

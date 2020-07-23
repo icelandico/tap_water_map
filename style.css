@@ -33,3 +33,8 @@ body {
 .map__info-country-name {
     font-weight: 700;
 }
+
+.city-info {
+    padding: 0;
+    margin: 0.25rem 0!important;
+}
