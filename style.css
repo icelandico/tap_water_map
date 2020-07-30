@@ -5,13 +5,14 @@ body {
 }
 
 #map-container {
-  height: 500px;
+  height: 1000px;
   width: 100%;
   margin: 0 auto;
 }
 
 @media (min-width: 1280px) {
   #map-container {
+    height: 500px;
     width: 75%;
   }
 }
