@@ -53,19 +53,19 @@ const markerHtmlStyles = value => `
 const customIcon = feature => {
   const val = feature.properties.waterQuality;
   const divIcon = L.divIcon({
-    className: "my-custom-pin",
+    className: "city-marker-container",
     iconSize: [24, 24],
     iconAnchor: [18, 30],
     labelAnchor: [0, 0],
     popupAnchor: [-4, -24],
     html: `
-        <div style="${markerHtmlStyles(val)}">
-            <span class="city-info-value">${val}</span>
-        </div>
+      <div class="city-marker" style="${markerHtmlStyles(val)}">
+          <span class="city-info-value">${val}</span>
+      </div>
     `
-  })
+  });
   return divIcon
-}
+};
 
 const highlightFeature = e => {
   const layer = e.target;
@@ -88,7 +88,7 @@ const markerOn = e => {
 
 const updateInfo = data => {
   countryInfo.update(data);
-}
+};
 
 const resetHighlight = e => {
   geojsonLayerCountries.resetStyle(e.target);
@@ -103,8 +103,8 @@ const onEachFeature = (feature, layer) => {
   });
 };
 
-const markerPopup = (feature, l) => {
-  l.on({
+const markerAction = (feature, layer) => {
+  layer.on({
     mouseover: markerOn,
     mouseout: resetHighlight,
   });
@@ -134,7 +134,7 @@ const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
   pointToLayer: function(geoJsonPoint, latlng) {
     return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
   },
-  onEachFeature: markerPopup
+  onEachFeature: markerAction
 });
 
 const zoomToFeature = e => {
