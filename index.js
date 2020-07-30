@@ -107,7 +107,7 @@ const markerAction = (feature, layer) => {
   layer.on({
     mouseover: markerOn,
     mouseout: resetHighlight,
-    click: markerOn
+    click: zoomToFeature
   });
 };
 
@@ -139,8 +139,14 @@ const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
 });
 
 const zoomToFeature = e => {
-  highlightFeature(e);
-  mymap.fitBounds(e.target.getBounds());
+  const featureType = e.target.feature.geometry.type;
+  if (featureType !== "Point") highlightFeature(e);
+  if (featureType === "Point") {
+    const latLngs = e.target.getLatLng();
+    mymap.setView(latLngs, 7);
+  } else {
+    mymap.fitBounds(e.target.getBounds());
+  }
 };
 
 const addStatesLayer = () => {
