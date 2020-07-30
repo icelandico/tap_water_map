@@ -107,6 +107,7 @@ const markerAction = (feature, layer) => {
   layer.on({
     mouseover: markerOn,
     mouseout: resetHighlight,
+    click: markerOn
   });
 };
 
@@ -153,11 +154,6 @@ const removeUsStates = () => {
   geojsonLayerStates.remove();
   geojsonLayerCities.remove();
 };
-
-// L.tileLayer('http://{s}.tiles.mapbox.com/v3/texastribune.map-3g2hqvcf/{z}/{x}/{y}.png', {
-//   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-//   noWrap: true
-// }).addTo(mymap);
 
 mymap.on('zoomend',function(e){
   const currentZoom = mymap.getZoom();
