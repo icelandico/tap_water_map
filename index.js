@@ -48,7 +48,7 @@ const markerHtmlStyles = value => `
   border-radius: 3rem 3rem 0;
   transform: rotate(45deg);
   border: 1px solid #FFFFFF
- `
+ `;
 
 const customIcon = feature => {
   const val = feature.properties.waterQuality;

@@ -3,10 +3,17 @@ body {
   margin: 0;
   padding: 2rem;
 }
+
 #map-container {
   height: 500px;
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+  #map-container {
+    width: 75%;
+  }
 }
 
 .info {
