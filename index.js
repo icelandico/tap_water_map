@@ -23,8 +23,8 @@ const countriesStyle = feature => {
     fill: true,
     fillColor: chooseColor(feature.properties.waterQuality),
     color: '#1F2232',
-    weight: 0.2,
-    fillOpacity: 0.7
+    weight: 0.1,
+    fillOpacity: 1
   }
 };
 
@@ -40,8 +40,8 @@ const chooseColor = value => {
 
 const markerHtmlStyles = value => `
   background-color: ${chooseColor(value)};
-  width: 0.75rem;
-  height: 0.75rem;
+  width: 1.2rem;
+  height: 1.2rem;
   display: block;
   position: relative;
   border-radius: 3rem 3rem 0;
@@ -57,7 +57,11 @@ const customIcon = feature => {
     iconSize: [0, 24],
     labelAnchor: [0, 0],
     popupAnchor: [7, -12],
-    html: `<span style="${markerHtmlStyles(val)}" />`
+    html: `
+        <div style="${markerHtmlStyles(val)}">
+            <span class="city-info-value">45</span>
+        </div>
+    `
   })
   return divIcon
 }
@@ -69,7 +73,7 @@ const highlightFeature = e => {
     weight: 0.75,
     color: '#1F2232',
     dashArray: '',
-    fillOpacity: 0.7
+    fillOpacity: 1
   });
   updateInfo(layer.feature.properties);
 
@@ -99,7 +103,7 @@ const markerPopup = (feature, l) => {
   const out = [];
   if (feature.properties) {
     out.push(`<p class="city-info">City: ${feature.properties.name}</p>`);
-    out.push(`<p class="city-info">Water Quality: ${feature.properties.waterQuality}</p>`);
+    // out.push(`<p class="city-info">Water Quality: ${feature.properties.waterQuality}</p>`);
     l.bindPopup(out.join(""));
   }
 
