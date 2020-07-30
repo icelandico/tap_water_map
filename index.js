@@ -139,6 +139,7 @@ const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
 });
 
 const zoomToFeature = e => {
+  highlightFeature(e)
   mymap.fitBounds(e.target.getBounds());
 };
 
