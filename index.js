@@ -8,11 +8,12 @@ countryInfo.onAdd = function (map) {
 };
 
 countryInfo.update = function (props) {
-  const waterValue = props && props.waterQuality || "No Data"
-  this.div.innerHTML = '<h1>Tap Water Quality</h1>' +  (props ?
-      '<p class="map__info-country-name">' + props.name + '</p>' +
-      '<p>' + waterValue + '</p>'
-      : 'Hover over a country');
+  const waterValue = props && props.waterQuality
+  this.div.innerHTML = '' +
+      '<h1>Tap Water Quality</h1>' +
+      '<p class="map__info-country-name">' + (props ? props.name : `Country/City`) + '</p>' +
+      '<p>' + (waterValue || `Hover on country/city`) + '</p>'
+      ;
 };
 
 countryInfo.addTo(mymap);
@@ -68,7 +69,6 @@ const customIcon = feature => {
 
 const highlightFeature = e => {
   const layer = e.target;
-  console.log("Marker", layer)
   layer.setStyle({
     weight: 0.75,
     color: '#1F2232',
@@ -83,10 +83,6 @@ const highlightFeature = e => {
 
 const markerOn = e => {
   const layer = e.target;
-  console.log("Marker", layer)
-  layer.setStyle({
-    color: '#1F2232',
-  });
   updateInfo(layer.feature.properties);
 };
 
@@ -158,14 +154,13 @@ const removeUsStates = () => {
   geojsonLayerCities.remove();
 };
 
-L.tileLayer('http://{s}.tiles.mapbox.com/v3/texastribune.map-3g2hqvcf/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-  noWrap: true
-}).addTo(mymap);
+// L.tileLayer('http://{s}.tiles.mapbox.com/v3/texastribune.map-3g2hqvcf/{z}/{x}/{y}.png', {
+//   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+//   noWrap: true
+// }).addTo(mymap);
 
 mymap.on('zoomend',function(e){
   const currentZoom = mymap.getZoom();
-  console.log("ZOOM", currentZoom)
   if (currentZoom >= 5) {
     geojsonLayerCities.addTo(mymap)
   }
