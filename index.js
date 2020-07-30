@@ -24,7 +24,7 @@ const countriesStyle = feature => {
     fillColor: chooseColor(feature.properties.waterQuality),
     color: '#f1f2f6',
     weight: 0.3,
-    fillOpacity: 0.1
+    fillOpacity: 1
   }
 };
 
@@ -32,7 +32,7 @@ const chooseColor = value => {
   if (!value) return "#ecf0f1";
   if (value > 80) return "#218c74";
   if (value > 60) return "#20bf6b";
-  if (value > 40) return "#ffb142";
+  if (value > 40) return "#f0932b";
   if (value > 20) return "#cd6133";
   if (value > 0) return "#b33939";
   if (value == 0) return "#57606f";
@@ -56,7 +56,7 @@ const customIcon = feature => {
     iconSize: [24, 24],
     iconAnchor: [18, 30],
     labelAnchor: [0, 0],
-    popupAnchor: [7, -12],
+    popupAnchor: [-4, -24],
     html: `
         <div style="${markerHtmlStyles(val)}">
             <span class="city-info-value">${val}</span>
@@ -68,18 +68,26 @@ const customIcon = feature => {
 
 const highlightFeature = e => {
   const layer = e.target;
-
+  console.log("Marker", layer)
   layer.setStyle({
     weight: 0.75,
     color: '#1F2232',
     dashArray: '',
-    // fillOpacity: 1
   });
   updateInfo(layer.feature.properties);
 
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
     layer.bringToFront();
   }
+};
+
+const markerOn = e => {
+  const layer = e.target;
+  console.log("Marker", layer)
+  layer.setStyle({
+    color: '#1F2232',
+  });
+  updateInfo(layer.feature.properties);
 };
 
 const updateInfo = data => {
@@ -100,13 +108,10 @@ const onEachFeature = (feature, layer) => {
 };
 
 const markerPopup = (feature, l) => {
-  const out = [];
-  if (feature.properties) {
-    out.push(`<p class="city-info">City: ${feature.properties.name}</p>`);
-    // out.push(`<p class="city-info">Water Quality: ${feature.properties.waterQuality}</p>`);
-    l.bindPopup(out.join(""));
-  }
-
+  l.on({
+    mouseover: markerOn,
+    mouseout: resetHighlight,
+  });
 };
 
 const usFilter = feature => {
