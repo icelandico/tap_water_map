@@ -8,11 +8,11 @@ countryInfo.onAdd = function (map) {
 };
 
 countryInfo.update = function (props) {
-  const waterValue = props && props.waterQuality
+  const waterValue = props && props.waterQuality || 'No data'
   this.div.innerHTML = '' +
       '<h1>Tap Water Quality</h1>' +
       '<p class="map__info-country-name">' + (props ? props.name : `Country/City`) + '</p>' +
-      '<p>' + (waterValue || `Hover on country/city`) + '</p>'
+      '<p>' + (props ? waterValue : 'Hover on country/city') + '</p>'
       ;
 };
 
