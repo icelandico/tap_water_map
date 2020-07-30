@@ -22,26 +22,26 @@ const countriesStyle = feature => {
     stroke: true,
     fill: true,
     fillColor: chooseColor(feature.properties.waterQuality),
-    color: '#1F2232',
-    weight: 0.1,
-    fillOpacity: 1
+    color: '#f1f2f6',
+    weight: 0.3,
+    fillOpacity: 0.1
   }
 };
 
 const chooseColor = value => {
   if (!value) return "#ecf0f1";
-  if (value > 80) return "#269a4e";
-  if (value > 60) return "#2ecc71";
-  if (value > 40) return "#f1c40f";
-  if (value > 20) return "#e67e22";
-  if (value > 0) return "#e74c3c";
-  if (value === 0) return "#34495e";
+  if (value > 80) return "#218c74";
+  if (value > 60) return "#20bf6b";
+  if (value > 40) return "#ffb142";
+  if (value > 20) return "#cd6133";
+  if (value > 0) return "#b33939";
+  if (value == 0) return "#57606f";
 };
 
 const markerHtmlStyles = value => `
   background-color: ${chooseColor(value)};
-  width: 1.2rem;
-  height: 1.2rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
   display: block;
   position: relative;
   border-radius: 3rem 3rem 0;
@@ -53,13 +53,13 @@ const customIcon = feature => {
   const val = feature.properties.waterQuality;
   const divIcon = L.divIcon({
     className: "my-custom-pin",
-    iconAnchor: [0, 12],
-    iconSize: [0, 24],
+    iconSize: [24, 24],
+    iconAnchor: [18, 30],
     labelAnchor: [0, 0],
     popupAnchor: [7, -12],
     html: `
         <div style="${markerHtmlStyles(val)}">
-            <span class="city-info-value">45</span>
+            <span class="city-info-value">${val}</span>
         </div>
     `
   })
@@ -73,7 +73,7 @@ const highlightFeature = e => {
     weight: 0.75,
     color: '#1F2232',
     dashArray: '',
-    fillOpacity: 1
+    // fillOpacity: 1
   });
   updateInfo(layer.feature.properties);
 
@@ -160,11 +160,13 @@ L.tileLayer('http://{s}.tiles.mapbox.com/v3/texastribune.map-3g2hqvcf/{z}/{x}/{y
 
 mymap.on('zoomend',function(e){
   const currentZoom = mymap.getZoom();
+  console.log("ZOOM", currentZoom)
   if (currentZoom >= 5) {
     geojsonLayerCities.addTo(mymap)
   }
-  if (currentZoom >= 4) {
+  else if (currentZoom >= 4) {
     addStatesLayer();
+    geojsonLayerCities.remove();
   } else {
     removeUsStates();
   }
