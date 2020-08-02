@@ -1,13 +1,13 @@
 const mymap = L.map('map-container').setView([51.505, -0.09], 2);
-const countryInfo = L.control();
+const featureInfo = L.control();
 
-countryInfo.onAdd = function (map) {
+featureInfo.onAdd = function (map) {
   this.div = L.DomUtil.create('div', 'info')
   this.update();
   return this.div;
 };
 
-countryInfo.update = function (props) {
+featureInfo.update = function (props) {
   const waterValue = props && props.waterQuality || 'No data'
   this.div.innerHTML = '' +
       '<h1>Tap Water Quality</h1>' +
@@ -16,7 +16,7 @@ countryInfo.update = function (props) {
       ;
 };
 
-countryInfo.addTo(mymap);
+featureInfo.addTo(mymap);
 
 const countriesStyle = feature => {
   return {
@@ -87,12 +87,12 @@ const markerOn = e => {
 };
 
 const updateInfo = data => {
-  countryInfo.update(data);
+  featureInfo.update(data);
 };
 
 const resetHighlight = e => {
   geojsonLayerCountries.resetStyle(e.target);
-  countryInfo.update();
+  featureInfo.update();
 };
 
 const onEachFeature = (feature, layer) => {
