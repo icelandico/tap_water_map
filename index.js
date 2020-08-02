@@ -139,6 +139,7 @@ const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
 });
 
 const zoomToFeature = e => {
+  alert(e.target.feature.properties.name)
   const featureType = e.target.feature.geometry.type;
   if (featureType !== "Point") highlightFeature(e);
   if (featureType === "Point") {
