@@ -20,7 +20,7 @@ const chooseColor = value => {
   if (value > 60) return "#08303b";
   if (value > 40) return "#ff9f00";
   if (value > 20) return "#ff5202";
-  if (value > 0) return "#a70009";
+  if (value >= 0) return "#a70009";
 };
 
 featureInfo.onAdd = function () {
@@ -45,7 +45,7 @@ featureInfo.update = function (props) {
   const waterValue = props && props.waterQuality || 'No data'
   this.div.innerHTML = '' +
       '<h1 class="map__info-country-name">' + (props && props.name || `Country/City`) + '</h1>' +
-      '<p class="map__info-country-rate">' + (props ? `Water Rating: ${props.waterQuality}` : 'Hover on country/city') + '</p>' +
+      '<p class="map__info-country-rate">' + (props ? `Water Rating: ${waterValue}` : 'Hover on country/city') + '</p>' +
       `<a class="map__info--details-link" href="${URL_BASE}-${currentCountry.toLowerCase()}" >See details for ${currentCountry}</a>`
       ;
 };
