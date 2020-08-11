@@ -18,7 +18,7 @@ featureInfo.update = function (props) {
 
 featureInfo.addTo(mymap);
 
-const countriesStyle = feature => {
+const countriesStyle = () => {
   return {
     stroke: true,
     fill: true,
@@ -31,11 +31,11 @@ const countriesStyle = feature => {
 
 const chooseColor = value => {
   if (!value) return "#ecf0f1";
-  if (value > 80) return "#218c74";
-  if (value > 60) return "#20bf6b";
-  if (value > 40) return "#f0932b";
-  if (value > 20) return "#cd6133";
-  if (value > 0) return "#b33939";
+  if (value > 80) return "#406141";
+  if (value > 60) return "#08303b";
+  if (value > 40) return "#ff9f00";
+  if (value > 20) return "#ff5202";
+  if (value > 0) return "#a70009";
   if (value == 0) return "#57606f";
 };
 
