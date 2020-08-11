@@ -62,6 +62,7 @@ body {
   box-shadow: 0 0 10px 3px #000;
 }
 
+
 .leaflet-left {
   width: 100%;
   left: 50%;
@@ -70,32 +71,63 @@ body {
   bottom: 25px;
 }
 
-.leaflet-top.leaflet-right {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 .map-legend {
   display: flex;
-  width: 75%;
+  justify-content: space-around;
+  width: 100%;
   margin: 0 auto!important;
-  padding: 15px 25px;
+  padding: 5px 0;
   float: none;
   background-color: #ddd;
   border-radius: 5px;
 }
 
 .legend-item__container {
-  width: auto;
   display: flex;
+  flex-direction: column;
+  width: auto;
   align-items: center;
-  font-size: 18px;
-  margin-right: 20px;
-  flex: 1;
+  font-size: 14px;
 }
 
 .grade-color {
-  width: 25px;
-  height: 25px;
-  margin-right: 20px;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .map-legend {
+    padding: 15px;
+    justify-content: center;
+  }
+
+  .leaflet-top.leaflet-right {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .legend-item__container {
+    width: auto;
+    font-size: 18px;
+    margin-right: 20px;
+    flex-direction: row;
+  }
+
+  .grade-color {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+  }
+
+}
+
+@media (min-width: 1280px) {
+  .map-legend {
+    width: 75%;
+  }
+  .legend-item__container {
+    flex: 1;
+  }
+
 }
