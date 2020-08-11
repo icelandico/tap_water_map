@@ -22,8 +22,8 @@ const countriesStyle = feature => {
   return {
     stroke: true,
     fill: true,
-    fillColor: chooseColor(feature.properties.waterQuality),
-    color: '#f1f2f6',
+    fillColor: '#325670',
+    color: '#7991a3',
     weight: 0.3,
     fillOpacity: 1
   }
@@ -73,6 +73,8 @@ const highlightFeature = e => {
     weight: 0.75,
     color: '#1F2232',
     dashArray: '',
+    fillColor: chooseColor(layer.feature.properties.waterQuality)
+
   });
   updateInfo(layer.feature.properties);
 
