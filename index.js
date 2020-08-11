@@ -4,6 +4,7 @@ const legendElement = L.control({ position: 'bottomleft' });
 const URL_BASE = "https://www.canyoudrinktapwaterin.com/tap-water-safety-in";
 let currentCountry = "";
 let currentRating = "";
+let locked = false;
 
 const thresholds = [
   {label: "< 20%", value: 19},
@@ -92,19 +93,19 @@ const customIcon = feature => {
 
 const highlightFeature = e => {
   const layer = e.target;
+  !locked && (
+    updateInfo(layer.feature.properties),
+    setFeatureColor(layer));
+};
+
+const setFeatureColor = (layer) => {
   layer.setStyle({
     weight: 0.75,
     color: '#1F2232',
     dashArray: '',
     fillColor: chooseColor(layer.feature.properties.waterQuality)
-
   });
-  updateInfo(layer.feature.properties);
-
-  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-    layer.bringToFront();
-  }
-};
+}
 
 const markerOn = e => {
   const layer = e.target;
@@ -173,6 +174,9 @@ const zoomToFeature = e => {
     mymap.setView(latLngs, 7);
   } else {
     mymap.fitBounds(e.target.getBounds());
+    locked = true;
+    updateInfo(e.target.feature.properties);
+    setFeatureColor(e.target)
   }
 };
 
