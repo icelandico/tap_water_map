@@ -44,9 +44,9 @@ legendElement.onAdd = function(map) {
 featureInfo.update = function (props) {
   const waterValue = props && props.waterQuality || 'No data'
   this.div.innerHTML = '' +
-      '<h1 class="map__info-country-name">' + (currentCountry || `Country/City`) + '</h1>' +
-      '<p class="map__info-country-rate">' + (currentRating ? `Water Rating: ${currentRating}` : 'Hover on country/city') + '</p>' +
-      `<a class="map__info--details-link" href="${URL_BASE}-${currentCountry.toLowerCase()}" >See details</a>`
+      '<h1 class="map__info-country-name">' + (props && props.name || `Country/City`) + '</h1>' +
+      '<p class="map__info-country-rate">' + (props ? `Water Rating: ${props.waterQuality}` : 'Hover on country/city') + '</p>' +
+      `<a class="map__info--details-link" href="${URL_BASE}-${currentCountry.toLowerCase()}" >See details for ${currentCountry}</a>`
       ;
 };
 
@@ -93,9 +93,8 @@ const customIcon = feature => {
 
 const highlightFeature = e => {
   const layer = e.target;
-  !locked && (
     updateInfo(layer.feature.properties),
-    setFeatureColor(layer));
+    setFeatureColor(layer);
 };
 
 const setFeatureColor = (layer) => {
@@ -113,8 +112,8 @@ const markerOn = e => {
 };
 
 const updateInfo = data => {
-  currentCountry = data.name;
-  currentRating = data.waterQuality;
+  // currentCountry = data.name;
+  // currentRating = data.waterQuality;
   featureInfo.update(data);
 };
 
@@ -173,6 +172,7 @@ const zoomToFeature = e => {
     const latLngs = e.target.getLatLng();
     mymap.setView(latLngs, 7);
   } else {
+    currentCountry = e.target.feature.properties.name
     mymap.fitBounds(e.target.getBounds());
     locked = true;
     updateInfo(e.target.feature.properties);
