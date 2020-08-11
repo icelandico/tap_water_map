@@ -1,11 +1,44 @@
 const mymap = L.map('map-container').setView([51.505, -0.09], 2);
 const featureInfo = L.control();
+const legendElement = L.control({ position: 'bottomright' });
 
-featureInfo.onAdd = function (map) {
+const thresholds = [
+  {label: "< 20%", value: 19},
+  {label: "20%-39%", value: 39},
+  {label: "40%-59%", value: 59},
+  {label: "60%-79%", value: 79},
+  {label: "80%-100%", value: 100},
+];
+
+const chooseColor = value => {
+  if (!value) return "#ecf0f1";
+  if (value > 80) return "#406141";
+  if (value > 60) return "#08303b";
+  if (value > 40) return "#ff9f00";
+  if (value > 20) return "#ff5202";
+  if (value > 0) return "#a70009";
+  // if (value == 0) return "#57606f";
+};
+
+featureInfo.onAdd = function () {
   this.div = L.DomUtil.create('div', 'info')
   this.update();
   return this.div;
 };
+
+legendElement.onAdd = function(map) {
+  const legendDiv = L.DomUtil.create('div', 'map-legend');
+  for (let i = 0; i < thresholds.length; i++) {
+    legendDiv.innerHTML += `
+      <div class="legend-item__container">
+        <div class="legend-grade-item grade-color" style="background: ${chooseColor(thresholds[i]["value"])}"></div>
+        <span class="legend-grade-item">${thresholds[i]["label"]}</span>
+      </div>`
+  }
+  return legendDiv
+};
+
+legendElement.addTo(mymap)
 
 featureInfo.update = function (props) {
   const waterValue = props && props.waterQuality || 'No data'
@@ -27,16 +60,6 @@ const countriesStyle = () => {
     weight: 0.3,
     fillOpacity: 1
   }
-};
-
-const chooseColor = value => {
-  if (!value) return "#ecf0f1";
-  if (value > 80) return "#406141";
-  if (value > 60) return "#08303b";
-  if (value > 40) return "#ff9f00";
-  if (value > 20) return "#ff5202";
-  if (value > 0) return "#a70009";
-  if (value == 0) return "#57606f";
 };
 
 const markerHtmlStyles = value => `

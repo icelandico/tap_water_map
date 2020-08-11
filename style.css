@@ -61,3 +61,14 @@ body {
 .city-marker-container:hover .city-marker {
   box-shadow: 0 0 10px 3px #000;
 }
+
+.legend-item__container {
+  width: 100px;
+  display: flex;
+}
+
+.grade-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
