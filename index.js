@@ -92,7 +92,7 @@ const customIcon = feature => {
 
 const highlightFeature = e => {
   const layer = e.target;
-    updateInfo(layer.feature.properties),
+    featureInfo.update(layer.feature.properties),
     setFeatureColor(layer);
 };
 
@@ -107,13 +107,7 @@ const setFeatureColor = (layer) => {
 
 const markerOn = e => {
   const layer = e.target;
-  updateInfo(layer.feature.properties);
-};
-
-const updateInfo = data => {
-  // currentCountry = data.name;
-  // currentRating = data.waterQuality;
-  featureInfo.update(data);
+  featureInfo.update(layer.feature.properties);
 };
 
 const resetHighlight = e => {
@@ -174,7 +168,7 @@ const zoomToFeature = e => {
     currentCountry = e.target.feature.properties.name
     mymap.fitBounds(e.target.getBounds());
     locked = true;
-    updateInfo(e.target.feature.properties);
+    featureInfo.update(e.target.feature.properties);
     setFeatureColor(e.target)
   }
 };
