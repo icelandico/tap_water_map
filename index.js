@@ -2,7 +2,7 @@ const mymap = L.map('map-container').setView([51.505, -0.09], 2);
 const featureInfo = L.control();
 const legendElement = L.control({ position: 'bottomleft' });
 const URL_BASE = "https://www.canyoudrinktapwaterin.com/tap-water-safety-in";
-let currentCountry = "";
+let currentFeature = "";
 let currentRating = "";
 let locked = false;
 
@@ -46,7 +46,7 @@ featureInfo.update = function (props) {
   this.div.innerHTML = '' +
       '<h1 class="map__info-country-name">' + (props && props.name || `Country/City`) + '</h1>' +
       '<p class="map__info-country-rate">' + (props ? `Water Rating: ${waterValue}` : 'Hover on country/city') + '</p>' +
-      `<a class="map__info--details-link" href="${URL_BASE}-${currentCountry.toLowerCase()}" >See details for ${currentCountry}</a>`
+      `<a class="map__info--details-link" href="${URL_BASE}-${currentFeature.toLowerCase()}" >See details for ${currentFeature}</a>`
       ;
 };
 
@@ -92,8 +92,8 @@ const customIcon = feature => {
 
 const highlightFeature = e => {
   const layer = e.target;
-    featureInfo.update(layer.feature.properties),
-    setFeatureColor(layer);
+  featureInfo.update(layer.feature.properties),
+  setFeatureColor(layer);
 };
 
 const setFeatureColor = (layer) => {
@@ -103,7 +103,7 @@ const setFeatureColor = (layer) => {
     dashArray: '',
     fillColor: chooseColor(layer.feature.properties.waterQuality)
   });
-}
+};
 
 const markerOn = e => {
   const layer = e.target;
@@ -165,12 +165,12 @@ const zoomToFeature = e => {
     const latLngs = e.target.getLatLng();
     mymap.setView(latLngs, 7);
   } else {
-    currentCountry = e.target.feature.properties.name
     mymap.fitBounds(e.target.getBounds());
     locked = true;
     featureInfo.update(e.target.feature.properties);
     setFeatureColor(e.target)
   }
+  currentFeature = e.target.feature.properties.name;
 };
 
 const addStatesLayer = () => {
