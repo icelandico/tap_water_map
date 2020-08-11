@@ -73,9 +73,11 @@ body {
 .map-legend {
   display: flex;
   width: 75%;
-  margin-left: auto!important;
-  margin-right: auto;
+  margin: 0 auto!important;
+  padding: 15px 25px;
   float: none;
+  background-color: #ddd;
+  border-radius: 5px;
 }
 
 .legend-item__container {

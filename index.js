@@ -37,7 +37,6 @@ legendElement.onAdd = function(map) {
   return legendDiv
 };
 
-legendElement.addTo(mymap)
 
 featureInfo.update = function (props) {
   const waterValue = props && props.waterQuality || 'No data'
@@ -200,3 +199,4 @@ mymap.on('zoomend',function(e){
 });
 
 geojsonLayerCountries.addTo(mymap);
+legendElement.addTo(mymap)
