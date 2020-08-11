@@ -1,6 +1,6 @@
 const mymap = L.map('map-container').setView([51.505, -0.09], 2);
 const featureInfo = L.control();
-const legendElement = L.control({ position: 'bottomright' });
+const legendElement = L.control({ position: 'bottomleft' });
 
 const thresholds = [
   {label: "< 20%", value: 19},
@@ -17,7 +17,6 @@ const chooseColor = value => {
   if (value > 40) return "#ff9f00";
   if (value > 20) return "#ff5202";
   if (value > 0) return "#a70009";
-  // if (value == 0) return "#57606f";
 };
 
 featureInfo.onAdd = function () {
