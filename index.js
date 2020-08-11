@@ -50,7 +50,6 @@ featureInfo.update = function (props) {
       ;
 };
 
-featureInfo.addTo(mymap);
 
 const countriesStyle = () => {
   return {
@@ -208,3 +207,4 @@ mymap.on('zoomend',function(e){
 
 geojsonLayerCountries.addTo(mymap);
 legendElement.addTo(mymap)
+featureInfo.addTo(mymap);
