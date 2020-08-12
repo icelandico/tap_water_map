@@ -24,11 +24,11 @@ legendElement.onAdd = function(map) {
 };
 
 featureInfo.update = function (props) {
-  const waterValue = props && props.waterQuality || 'No data'
+  const waterValue = props && props.waterQuality || 'No data';
   this.div.innerHTML = '' +
       '<h1 class="map__info-country-name">' + (props && props.name || `Country/City`) + '</h1>' +
       '<p class="map__info-country-rate">' + (props ? `Water Rating: ${waterValue}` : 'Hover on country/city') + '</p>' +
-      `<a class="map__info--details-link" href="${URL_BASE}-${currentFeature.toLowerCase()}" >See details for ${currentFeature}</a>`
+      `<a class="map__info--details-link" href="${URL_BASE}-${currentFeature.toLowerCase()}" >${currentFeature ? "See details for " + currentFeature : "Click country to view details"}</a>`
       ;
 };
 
@@ -124,12 +124,14 @@ const zoomToFeature = e => {
     const latLngs = e.target.getLatLng();
     mymap.setView(latLngs, 7);
   } else {
+    console.log("Polygon")
     mymap.fitBounds(e.target.getBounds());
     locked = true;
     featureInfo.update(e.target.feature.properties);
     setFeatureColor(e.target)
   }
   currentFeature = e.target.feature.properties.name;
+  console.log(currentFeature)
 };
 
 const addStatesLayer = () => {
