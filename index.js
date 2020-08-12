@@ -30,7 +30,7 @@ featureInfo.update = function (props) {
     '<h1 class="map__info-country-name">' + (props && props.name || `Country/City`) + '</h1>' +
     '<p class="map__info-country-rate">' + (props ? `Water Rating: ${waterValue}` : 'Hover on country/city') + '</p>' +
     `<a class="map__info--details-link" href="${URL_BASE}-${currentFeature.toLowerCase()}" >
-      See details for ${currentFeature}
+      ${currentFeature ? "See details for " + currentFeature : "Click feature to see details"}
     </a>`;
 };
 
