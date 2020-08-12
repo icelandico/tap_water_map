@@ -3,10 +3,9 @@ const featureInfo = L.control();
 const legendElement = L.control({ position: 'bottomleft' });
 let currentFeature = "";
 let previousFeature = "";
-let locked = false;
 
 featureInfo.onAdd = function () {
-  this.div = L.DomUtil.create('div', 'info')
+  this.div = L.DomUtil.create('div', 'info');
   this.update();
   return this.div;
 };
@@ -52,7 +51,7 @@ const customIcon = feature => {
 
 const highlightFeature = e => {
   const layer = e.target;
-  featureInfo.update(layer.feature.properties),
+  featureInfo.update(layer.feature.properties);
   setFeatureColor(layer);
 };
 
