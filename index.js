@@ -2,7 +2,7 @@ const mymap = L.map('map-container').setView([51.505, -0.09], 2);
 const featureInfo = L.control();
 const legendElement = L.control({ position: 'bottomleft' });
 let currentFeature = "";
-let currentRating = "";
+let previousFeature = "";
 let locked = false;
 
 featureInfo.onAdd = function () {
@@ -123,6 +123,7 @@ const zoomToFeature = e => {
   const featureType = e.target.feature.geometry.type;
   if (featureType !== "Point") highlightFeature(e);
   currentFeature = e.target.feature.properties.name;
+  resetPreviousStyle(e.target);
   if (featureType === "Point") {
     const latLngs = e.target.getLatLng();
     mymap.setView(latLngs, 7);
@@ -131,6 +132,11 @@ const zoomToFeature = e => {
     mymap.fitBounds(e.target.getBounds());
     setFeatureColor(e.target)
   }
+};
+
+const resetPreviousStyle = layer => {
+  if (previousFeature) geojsonLayerCountries.resetStyle(previousFeature);
+  previousFeature = layer;
 };
 
 const addStatesLayer = () => {
