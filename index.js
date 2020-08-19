@@ -55,12 +55,13 @@ const highlightFeature = e => {
   setFeatureColor(layer);
 };
 
-const setFeatureColor = (layer) => {
+const setFeatureColor = layer => {
+  const waterQualityValue = parseInt(layer.feature.properties.waterQuality)
   layer.setStyle({
     weight: 0.75,
     color: '#1F2232',
     dashArray: '',
-    fillColor: chooseColor(layer.feature.properties.waterQuality)
+    fillColor: chooseColor(waterQualityValue)
   });
 };
 
@@ -118,6 +119,13 @@ const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
   onEachFeature: markerAction
 });
 
+const geojsonLayerWorldCities = new L.GeoJSON.AJAX("geojson/world_cities.geojson", {
+  pointToLayer: function(geoJsonPoint, latlng) {
+    return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
+  },
+  onEachFeature: markerAction
+});
+
 const zoomToFeature = e => {
   const featureType = e.target.feature.geometry.type;
   if (featureType !== "Point") highlightFeature(e);
@@ -155,10 +163,12 @@ mymap.on('zoomend',function(e) {
   const currentZoom = mymap.getZoom();
   if (currentZoom >= 5) {
     geojsonLayerCities.addTo(mymap)
+    geojsonLayerWorldCities.addTo(mymap)
   }
   else if (currentZoom >= 4) {
     addStatesLayer();
     geojsonLayerCities.remove();
+    geojsonLayerWorldCities.remove();
   } else {
     removeUsStates();
   }

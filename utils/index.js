@@ -9,12 +9,12 @@ const thresholds = [
 ];
 
 const chooseColor = value => {
-  if (!value) return "#ecf0f1";
   if (value > 80) return "#406141";
   if (value > 60) return "#08303b";
   if (value > 40) return "#ff9f00";
   if (value > 20) return "#ff5202";
   if (value >= 0) return "#a70009";
+  return "#ecf0f1";
 };
 
 const countriesStyle = () => {
