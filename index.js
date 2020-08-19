@@ -42,7 +42,7 @@ const customIcon = feature => {
     popupAnchor: [-4, -24],
     html: `
       <div class="city-marker" style="${markerHtmlStyles(val)}">
-          <span class="city-info-value">${val}</span>
+          <span class="city-info-value">${val || "?"}</span>
       </div>
     `
   });
