@@ -22,12 +22,13 @@ legendElement.onAdd = function(map) {
   return legendDiv
 };
 
-featureInfo.update = function (props) {
+featureInfo.update = function (props, isPoint) {
   const waterValue = props && props.waterQuality || 'No data';
+  const generatedLink = `${URL_BASE}-${currentFeature.toLowerCase()}`;
   this.div.innerHTML = '' +
     '<h1 class="map__info-country-name">' + (props && props.name || `Country/City`) + '</h1>' +
     '<p class="map__info-country-rate">' + (props ? `Water Rating: ${waterValue}` : 'Hover on country/city') + '</p>' +
-    `<a class="map__info--details-link" href="${URL_BASE}-${currentFeature.toLowerCase()}" >
+    `<a class="map__info--details-link" href="${isPoint ? generateCityUrl(currentFeature.toLowerCase()) : generatedLink}" >
       ${currentFeature ? "See details for " + currentFeature : "Click feature to see details"}
     </a>`;
 };
@@ -67,7 +68,8 @@ const setFeatureColor = layer => {
 
 const markerOn = e => {
   const layer = e.target;
-  featureInfo.update(layer.feature.properties);
+  const isPoint = e.target.feature.geometry.type === "Point";
+  featureInfo.update(layer.feature.properties, isPoint);
 };
 
 const resetHighlight = e => {
@@ -163,7 +165,7 @@ mymap.on('zoomend',function(e) {
   const currentZoom = mymap.getZoom();
   if (currentZoom >= 5) {
     geojsonLayerCities.addTo(mymap)
-    geojsonLayerWorldCities.addTo(mymap)
+    // geojsonLayerWorldCities.addTo(mymap)
   }
   else if (currentZoom >= 4) {
     addStatesLayer();
