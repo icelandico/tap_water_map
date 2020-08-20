@@ -97,36 +97,6 @@ const usFilter = feature => {
   if (feature.properties.abbrev !== "U.S.A.") return true
 };
 
-const geojsonLayerCountries = new L.GeoJSON.AJAX("geojson/countries.geojson", {
-  style: countriesStyle,
-  onEachFeature: onEachFeature,
-});
-
-const geojsonLayerCountriesNoUs = new L.GeoJSON.AJAX("geojson/countries.geojson", {
-  style: countriesStyle,
-  onEachFeature: onEachFeature,
-  filter: usFilter
-});
-
-const geojsonLayerStates = new L.GeoJSON.AJAX("geojson/us_states.geojson", {
-  style: countriesStyle,
-  onEachFeature: onEachFeature,
-});
-
-const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
-  pointToLayer: function(geoJsonPoint, latlng) {
-    return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
-  },
-  onEachFeature: markerAction
-});
-
-const geojsonLayerWorldCities = new L.GeoJSON.AJAX("geojson/world_cities.geojson", {
-  pointToLayer: function(geoJsonPoint, latlng) {
-    return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
-  },
-  onEachFeature: markerAction
-});
-
 const zoomToFeature = e => {
   const featureType = e.target.feature.geometry.type;
   if (featureType !== "Point") highlightFeature(e);
@@ -173,6 +143,36 @@ mymap.on('zoomend',function(e) {
   } else {
     removeUsStates();
   }
+});
+
+const geojsonLayerCountries = new L.GeoJSON.AJAX("geojson/countries.geojson", {
+  style: countriesStyle,
+  onEachFeature: onEachFeature,
+});
+
+const geojsonLayerCountriesNoUs = new L.GeoJSON.AJAX("geojson/countries.geojson", {
+  style: countriesStyle,
+  onEachFeature: onEachFeature,
+  filter: usFilter
+});
+
+const geojsonLayerStates = new L.GeoJSON.AJAX("geojson/us_states.geojson", {
+  style: countriesStyle,
+  onEachFeature: onEachFeature,
+});
+
+const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
+  pointToLayer: function(geoJsonPoint, latlng) {
+    return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
+  },
+  onEachFeature: markerAction
+});
+
+const geojsonLayerWorldCities = new L.GeoJSON.AJAX("geojson/world_cities.geojson", {
+  pointToLayer: function(geoJsonPoint, latlng) {
+    return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
+  },
+  onEachFeature: markerAction
 });
 
 geojsonLayerCountries.addTo(mymap);
