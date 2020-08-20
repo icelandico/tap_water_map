@@ -1,5 +1,5 @@
 const URL_BASE = "https://www.canyoudrinktapwaterin.com/tap-water-safety-in";
-const generateCityUrl = city => `https://www.canyoudrinktapwaterin.com/is-${city}-tap-water-safety-in`;
+const generateCityUrl = city => `https://www.canyoudrinktapwaterin.com/is-${city}-tap-water-safe-to-drink`;
 
 const thresholds = [
   {label: "< 20%", value: 19},

@@ -1,8 +1,9 @@
-const mymap = L.map('map-container').setView([51.505, -0.09], 2);
+const mymap = L.map('map-container', { preferCanvas: true }).setView([51.505, -0.09], 2);
 const featureInfo = L.control();
 const legendElement = L.control({ position: 'bottomleft' });
 let currentFeature = "";
 let previousFeature = "";
+let clickedElement = "";
 
 featureInfo.onAdd = function () {
   this.div = L.DomUtil.create('div', 'info');
@@ -22,13 +23,13 @@ legendElement.onAdd = function(map) {
   return legendDiv
 };
 
-featureInfo.update = function (props, isPoint) {
+featureInfo.update = function (props) {
   const waterValue = props && props.waterQuality || 'No data';
   const generatedLink = `${URL_BASE}-${currentFeature.toLowerCase()}`;
   this.div.innerHTML = '' +
     '<h1 class="map__info-country-name">' + (props && props.name || `Country/City`) + '</h1>' +
     '<p class="map__info-country-rate">' + (props ? `Water Rating: ${waterValue}` : 'Hover on country/city') + '</p>' +
-    `<a class="map__info--details-link" href="${isPoint ? generateCityUrl(currentFeature.toLowerCase()) : generatedLink}" >
+    `<a class="map__info--details-link" href="${clickedElement === "Point" ? generateCityUrl(currentFeature.toLowerCase()) : generatedLink}" >
       ${currentFeature ? "See details for " + currentFeature : "Click feature to see details"}
     </a>`;
 };
@@ -105,7 +106,9 @@ const zoomToFeature = e => {
   if (featureType === "Point") {
     const latLngs = e.target.getLatLng();
     mymap.setView(latLngs, 7);
+    clickedElement = "Point";
   } else {
+    clickedElement = "Polygon";
     featureInfo.update(e.target.feature.properties);
     mymap.fitBounds(e.target.getBounds());
     setFeatureColor(e.target)
@@ -133,8 +136,8 @@ const removeUsStates = () => {
 mymap.on('zoomend',function(e) {
   const currentZoom = mymap.getZoom();
   if (currentZoom >= 5) {
-    geojsonLayerCities.addTo(mymap)
-    // geojsonLayerWorldCities.addTo(mymap)
+    geojsonLayerCities.addTo(mymap);
+    geojsonLayerWorldCities.addTo(mymap)
   }
   else if (currentZoom >= 4) {
     addStatesLayer();
@@ -163,14 +166,17 @@ const geojsonLayerStates = new L.GeoJSON.AJAX("geojson/us_states.geojson", {
 
 const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
   pointToLayer: function(geoJsonPoint, latlng) {
-    return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
+    return L.circleMarker(latlng);
+  },
+  style: function(feature) {
+    return { color: chooseColor(feature.properties.waterQuality), fillOpacity: 1, radius: 3 }
   },
   onEachFeature: markerAction
 });
 
 const geojsonLayerWorldCities = new L.GeoJSON.AJAX("geojson/world_cities.geojson", {
   pointToLayer: function(geoJsonPoint, latlng) {
-    return L.marker(latlng, { icon: customIcon(geoJsonPoint) });
+    return L.circleMarker(latlng, { icon: customIcon(geoJsonPoint) });
   },
   onEachFeature: markerAction
 });
