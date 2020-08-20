@@ -169,14 +169,17 @@ const geojsonLayerCities = new L.GeoJSON.AJAX("geojson/us_cities.geojson", {
     return L.circleMarker(latlng);
   },
   style: function(feature) {
-    return { color: chooseColor(feature.properties.waterQuality), fillOpacity: 1, radius: 3 }
+    return { stroke: true, color: "#ffffff", fillColor: chooseColor(feature.properties.waterQuality), fillOpacity: 1, radius: 8, weight: 1 }
   },
   onEachFeature: markerAction
 });
 
 const geojsonLayerWorldCities = new L.GeoJSON.AJAX("geojson/world_cities.geojson", {
   pointToLayer: function(geoJsonPoint, latlng) {
-    return L.circleMarker(latlng, { icon: customIcon(geoJsonPoint) });
+    return L.circleMarker(latlng);
+  },
+  style: function(feature) {
+    return { stroke: true, color: "#ffffff", fillColor: chooseColor(feature.properties.waterQuality), fillOpacity: 1, radius: 8, weight: 1 }
   },
   onEachFeature: markerAction
 });
