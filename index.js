@@ -87,6 +87,14 @@ const onEachFeature = (feature, layer) => {
 };
 
 const markerAction = (feature, layer) => {
+  const tooltip = L.tooltip({
+    direction: 'top',
+    className: 'text2'
+  })
+  .setContent(layer.feature.properties.name)
+  .setLatLng(layer.getLatLng());
+  layer.bindTooltip(tooltip);
+
   layer.on({
     mouseover: markerOn,
     mouseout: resetHighlight,
