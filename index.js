@@ -74,7 +74,7 @@ const markerOn = e => {
 
 const resetHighlight = e => {
   const currentCountry = e.target.feature.properties.name;
-  if (currentCountry !== currentFeature) geojsonLayerCountries.resetStyle(e.target);
+  if (currentCountry !== currentFeature && e.target.feature.geometry.type !== "Point") geojsonLayerCountries.resetStyle(e.target);
   featureInfo.update();
 };
 
