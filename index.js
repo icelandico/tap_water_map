@@ -57,7 +57,7 @@ const highlightFeature = e => {
 };
 
 const setFeatureColor = layer => {
-  const waterQualityValue = parseInt(layer.feature.properties.waterQuality)
+  const waterQualityValue = parseInt(layer.feature.properties.waterQuality);
   layer.setStyle({
     weight: 0.75,
     color: '#1F2232',
@@ -68,8 +68,7 @@ const setFeatureColor = layer => {
 
 const markerOn = e => {
   const layer = e.target;
-  const isPoint = e.target.feature.geometry.type === "Point";
-  featureInfo.update(layer.feature.properties, isPoint);
+  featureInfo.update(layer.feature.properties);
 };
 
 const resetHighlight = e => {
